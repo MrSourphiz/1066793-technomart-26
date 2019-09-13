@@ -26,7 +26,7 @@
         </p>
         <p class="header__contacts">
             +7 (812) 555-05-55<br>
-               <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+            <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </p>
       </div>
 
@@ -70,9 +70,9 @@
             <div class="price__range">
                 <input type="range" min="0" max="30000" step="100">
             </div>
-            <input type="text" id="price-min" name="price-min" value="0"><label for="price-min"></label>
+            <input class="price__min" type="text" id="price-min" name="price-min" value="0"><label for="price-min">0</label>
             <span> - </span>
-            <input type="text" id="price-max" name="price-max" value="30000"><label for="price-max"></label>
+            <input class="price__max" type="text" id="price-max" name="price-max" value="30000"><label for="price-max">30000</label>
                   <!-- Здесь будет форма -->
         </div>
 
@@ -80,19 +80,19 @@
             <h3 class = "fabricators__title">ПРОИЗВОДИТЕЛИ:</h3>
             <ul class="fabricators__list">
                 <li class="fabricators__item">
-                    <input type="checkbox" id="fabricator-1" name="fabricator-1"><label for="fabricator-1">BOSCH</label>
+                    <input class="fabricators__checkbox" type="checkbox" id="fabricator-1" name="BOSCH"><label for="fabricator-1">BOSCH</label>
                 </li>
                 <li class="fabricators__item">
-                    <input type="checkbox" id="fabricator-2" name="fabricator-2"><label for="fabricator-2">ИНТЕРСКОЛ</label>
+                    <input class="fabricators__checkbox" type="checkbox" id="fabricator-2" name="Interskol"><label for="fabricator-2">ИНТЕРСКОЛ</label>
                 </li>
                 <li class="fabricators__item">
-                    <input type="checkbox" id="fabricator-3" name="fabricator-3"><label for="fabricator-3">MAKITA</label>
+                    <input class="fabricators__checkbox" type="checkbox" id="fabricator-3" name="MAKITA"><label for="fabricator-3">MAKITA</label>
                 </li>
                 <li class="fabricators__item">
-                    <input type="checkbox" id="fabricator-4" name="fabricator-4"><label for="fabricator-4">Dewalt</label>
+                    <input class="fabricators__checkbox" type="checkbox" id="fabricator-4" name="Dewalt"><label for="fabricator-4">Dewalt</label>
                 </li>
                 <li class="fabricators__item">
-                    <input type="checkbox" id="fabricator-5" name="fabricator-5"><label for="fabricator-5">Hitachi</label>
+                    <input class="fabricators__checkbox" type="checkbox" id="fabricator-5" name="Hitachi"><label for="fabricator-5">Hitachi</label>
                 </li>
             </ul>
                   <!-- Здесь будет форма -->
@@ -102,16 +102,16 @@
             <h3 class="power__title">ПИТАНИЕ:</h3>
             <ul class="power__list">
                 <li class="power__item">
-                    <input type="checkbox" id="power-1"><label for="power-1">Аккумуляторные</label>
+                    <input class="power__checkbox" type="checkbox" id="power-1"><label for="power-1">Аккумуляторные</label>
                 </li>
                 <li class="power__item">
-                    <input type="checkbox" id="power-2"><label for="power-2">Сетевые</label>
+                    <input class="power__checkbox" type="checkbox" id="power-2"><label for="power-2">Сетевые</label>
                 </li>
             </ul>
                   <!-- Здесь будет форма -->
         </div>
 
-        <button class="filters__use">ПОКАЗАТЬ</button>
+        <button class="filters__btn">ПОКАЗАТЬ</button>
       </section>
 
       <section class="sort">
@@ -149,9 +149,15 @@
                         <img src="img/BFG3000.png" alt="Перфоратор BOSCH BFG 3000">
                     </a>
                 </p>
-                <b class="catalog__price">22500 Р.</b>
-                <b class="catalog__stock-price">15500 Р.</b>
-                <div class="catalog__new">NEW</div>
+                <p class="catalog__price">
+                    <b>22500 Р.</b>
+                </p>
+                <p class="catalog__stock-price">
+                    <b>15500 Р.</b>
+                </p>
+                <div class="catalog__new">
+                    <p>NEW</p>
+                </div>
                 <div class="catalog__btns">
                     <a class="btn" href="#">КУПИТЬ</a>
                     <a class="btn" href="#">В закладки</a>
@@ -166,9 +172,15 @@
                         <img src="img/BFG6000.png" alt="Перфоратор BOSCH BFG 6000">
                     </a>
                 </p>
-                <b class="catalog__price">30500 Р.</b>
-                <b class="catalog__stock-price">25500 Р.</b>
-                <div class="catalog__new">NEW</div>
+                <p class="catalog__price">
+                    <b>30500 Р.</b>
+                </p>
+                <p class="catalog__stock-price">
+                    <b>25500 Р.</b>
+                </p>
+                <div class="catalog__new">
+                    <p>NEW</p>
+                </div>
                 <div class="catalog__btns">
                     <a class="btn" href="#">КУПИТЬ</a>
                     <a class="btn" href="#">В закладки</a>
@@ -178,15 +190,20 @@
             <li class="catalog__item">
                 <p class="catalog__item-category">Перфоратор BOSCH</p>
                 <p class="catalog__item-title">BFG 2000</p>
-                <div class="catalog__new">NEW</div>
                 <p class="catalog__photo">
                     <a href = "#">
                         <img src="img/BFG2000.png" alt="Перфоратор BOSCH BFG 2000">
                     </a>
                 </p>
-                <b class="catalog__price">12500 Р.</b>
-                <b class="catalog__stock-price"></b>
-                <div class="catalog__new">NEW</div>
+                <p class="catalog__price">
+                    <b>12500 Р.</b>
+                </p>
+                <p class="catalog__stock-price visually-hidden">
+                    <b>Цена со скидкой</b>
+                </p>
+                <div class="catalog__new">
+                    <p>NEW</p>
+                </div>
                 <div class="catalog__btns">
                     <a class="btn" href="#">КУПИТЬ</a>
                     <a class="btn" href="#">В закладки</a>
@@ -201,9 +218,15 @@
                         <img src="img/BFG3000.png" alt="Перфоратор BOSCH BFG 3000">
                     </a>
                 </p>
-                <b class="catalog__price">22500 Р.</b>
-                <b class="catalog__stock-price">15500 Р.</b>
-                <div class="catalog__new">NEW</div>
+                <p class="catalog__price">
+                    <b>22500 Р.</b>
+                </p>
+                <p class="catalog__stock-price">
+                    <b>15500 Р.</b>
+                </p>
+                <div class="catalog__new">
+                    <p>NEW</p>
+                </div>
                 <div class="catalog__btns">
                     <a class="btn" href="#">КУПИТЬ</a>
                     <a class="btn" href="#">В закладки</a>
@@ -218,9 +241,15 @@
                         <img src="img/BFG6000.png" alt="Перфоратор BOSCH BFG 6000">
                     </a>
                 </p>
-                <b class="catalog__price">30500 Р.</b>
-                <b class="catalog__stock-price">25500 Р.</b>
-                <div class="catalog__new">NEW</div>
+                <p class="catalog__price">
+                    <b>30500 Р.</b>
+                </p>
+                <p class="catalog__stock-price">
+                    <b>25500 Р.</b>
+                </p>
+                <div class="catalog__new">
+                    <p>NEW</p>
+                </div>
                 <div class="catalog__btns">
                     <a class="btn" href="#">КУПИТЬ</a>
                     <a class="btn" href="#">В закладки</a>
@@ -235,9 +264,15 @@
                         <img src="img/BFG2000.png" alt="Перфоратор BOSCH BFG 2000">
                     </a>
                 </p>
-                <b class="catalog__price">12500 Р.</b>
-                <b class="catalog__stock-price"></b>
-                <div class="catalog__new">NEW</div>
+                <p class="catalog__price">
+                    <b>12500 Р.</b>
+                </p>
+                <p class="catalog__stock-price visually-hidden">
+                    <b>Цена со скидкой</b>
+                </p>
+                <div class="catalog__new">
+                    <p>NEW</p>
+                </div>
                 <div class="catalog__btns">
                     <a class="btn" href="#">КУПИТЬ</a>
                     <a class="btn" href="#">В закладки</a>
@@ -252,9 +287,15 @@
                         <img src="img/BFG3000.png" alt="Перфоратор BOSCH BFG 3000">
                     </a>
                 </p>
-                <b class="catalog__price">22500 Р.</b>
-                <b class="catalog__stock-price">15500 Р.</b>
-                <div class="catalog__new">NEW</div>
+                <p class="catalog__price">
+                    <b>22500 Р.</b>
+                </p>
+                <p class="catalog__stock-price">
+                    <b>15500 Р.</b>
+                </p>
+                <div class="catalog__new">
+                    <p>NEW</p>
+                </div>
                 <div class="catalog__btns">
                     <a class="btn" href="#">КУПИТЬ</a>
                     <a class="btn" href="#">В закладки</a>
@@ -269,9 +310,15 @@
                         <img src="img/BFG6000.png" alt="Перфоратор BOSCH BFG 6000">
                     </a>
                 </p>
-                <b class="catalog__price">30500 Р.</b>
-                <b class="catalog__stock-price">25500 Р.</b>
-                <div class="catalog__new">NEW</div>
+                <p class="catalog__price">
+                    <b>30500 Р.</b>
+                </p>
+                <p class="catalog__stock-price">
+                    <b>25500 Р.</b>
+                </p>
+                <div class="catalog__new">
+                    <p>NEW</p>
+                </div>
                 <div class="catalog__btns">
                     <a class="btn" href="#">КУПИТЬ</a>
                     <a class="btn" href="#">В закладки</a>
@@ -286,9 +333,15 @@
                         <img src="img/BFG2000.png" alt="Перфоратор BOSCH BFG 2000">
                     </a>
                 </p>
-                <b class="catalog__price">12500 Р.</b>
-                <b class="catalog__stock-price"></b>
-                <div class="catalog__new">NEW</div>
+                <p class="catalog__price">
+                    <b>12500 Р.</b>
+                </p>
+                <p class="catalog__stock-price visually-hidden">
+                    <b>Цена со скидкой</b>
+                </p>
+                <div class="catalog__new">
+                    <p>NEW</p>
+                </div>
                 <div class="catalog__btns">
                     <a class="btn" href="#">КУПИТЬ</a>
                     <a class="btn" href="#">В закладки</a>
@@ -298,7 +351,7 @@
       </section>
 
       <section class="pagination">
-        <h2 class="hidden__title">Номер страницы</h2>
+        <h2 class="visually-hidden">Номер страницы</h2>
         <ul class="pagination__list">
             <li class="pagination__item pagination__item-current"><a>1</a></li>
             <li class="pagination__item"><a href="#">2</a></li>
@@ -309,7 +362,7 @@
 
       <section class="about-container">
         <h2 class="about-container__title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
-        <p class="cabout-container__txt">
+        <p class="about-container__txt">
             Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
             В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
@@ -321,8 +374,8 @@
       <a class="footer__logo">
         <img src="fail/logo1.png" alt="Логотип магазина Техномарт">
       </a>
-      <nav class="site__navigation">
-        <ul class="site__navigation__list">
+      <nav class="site-navigation">
+        <ul class="site-navigation__list">
             <li><a href="index.html">Главная</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="catalog.html">Каталог</a></li>
@@ -334,7 +387,7 @@
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         +7 (812) 555-05-55
       </p>
-      <ul class="items__navigation">
+      <ul class="items-navigation">
         <li><a href="#">Материалы</a></li>
         <li><a href="#">Техника</a></li>
         <li><a href="#">Инструмент</a></li>
