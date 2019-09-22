@@ -18,9 +18,74 @@ ul {
 }
 
 
-                              /* VISUALLY-HIDDEN */
+                              /* VISUALLY-HIDDEN (то, что скрыто)*/
 .visually-hidden {
   display:none;
+}
+
+                              /* CENTER-CONTAINER (центровщик) */
+
+.center-container {
+    width: 940px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+                              /* SECTION-HEAD (заголовки разделов)*/
+.section__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 940px;
+    height: 89px;
+
+    background-color: #f9f5f0;
+
+    margin-top: 21px;
+    margin-bottom: 20px;
+}
+
+.section__head-title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #32425c;
+
+    margin-left: 30px;
+}
+
+.section__head-btn {
+    display: block;
+
+    width: 253px;
+    height: 18px;
+
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+
+    background-color: #ee3643;
+    border-radius: 3px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 24px;
+}
+
+.section__head-btn:hover,
+.section__head-btn:focus {
+    background-color: #ca2c37;
+}
+
+.section__head-btn:active {
+    background-color: #ba2732;
 }
 
 
@@ -244,7 +309,6 @@ ul {
 
 .header__navigation {
     width: 100%;
-
 }
 
 .site-navigation {
@@ -287,17 +351,97 @@ ul {
 
 
                               /* MAIN */
+
+                              /* MENU */
+.container__menu {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu__top-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.materials {
+    width: 300px;
+    height: 123px;
+
+    background-color: #ffbf47;
+}
+
+.instruments {
+    width: 300px;
+    height: 123px;
+
+    background-color: #3bbce3;
+}
+
+.technics {
+    width: 300px;
+    height: 123px;
+
+    background-color: #dc91d8;
+}
+
+                              /* POPULAR ITEMS */
+.popular-items__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+                              /* POPULAR FABRICATORS */
+.popular-fabricators__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.popular-fabricators__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 218px;
+    height: 143px;
+
+    text-align: center;
+
+    border: 1px solid #ebebeb;
+
+    margin-bottom: 20px;
+}
+
+.popular-fabricators__logo {
+    display: block;
+    height: 100%;
+}
+
+
+.popular-fabricators__item:hover {
+    box-shadow: 5px 5px 5px rgba(122,122,122,0.5);
+}
+
+                              /* SERVICES */
+.services {
+    margin-top: 65px;
+    width: 100%;
+    background-color: #f4f8f9;
+}
+
+                              /* INFO & CONTACTS */
 .main__wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    width: 940px;
-
     background-color: #ffffff;
-
-    margin-left: auto;
-    margin-right: auto;
 
     margin-bottom: 86px;
 }
@@ -326,6 +470,39 @@ ul {
     text-decoration: none;
 }
 
+.a--btn {
+    display: block;
+    width: 220px;
+    height: 18px;
+
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: #ee3643;
+    border-radius: 3px;
+}
+
+.a--btn:hover,
+.a--btn:focus {
+    background-color: #ca2c37;
+}
+
+.a--btn:active {
+    background-color: #ba2732;
+}
+
+.info__transport-companies li {
+    margin-bottom: 30px;
+}
+
 .contacts {
     width: 300px;
 }
@@ -343,6 +520,34 @@ ul {
     line-height: 24px;
     font-weight: 400;
     color: #000000;
+}
+
+.contacts img {
+    margin-bottom: 40px;
+}
+
+.contacts__btn {
+    width: 300px;
+    height: 38px;
+
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+
+    background-color: #ee3643;
+    border: none;
+    border-radius: 3px;
+}
+
+.contacts__btn:hover,
+.contacts__btn:focus {
+    background-color: #ca2c37;
+}
+
+.contacts__btn:active {
+    background-color: #ba2732;
 }
 
                               /* FOOTER */

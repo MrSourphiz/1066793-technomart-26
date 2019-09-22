@@ -65,36 +65,39 @@
           </ul>
       </nav>
     </header>
+
 <!-- MAIN -->
     <main class="container">
-      <section class="container__menu">
+      <section class="container__menu center-container">
           <h2 class="visually-hidden">ОСНОВНОЕ МЕНЮ</h2>
 
-          <div class="materials">
-              <h3 class="materials__title">Материалы</h3>
-              <img src="#materials" alt="логотип категории Материалы">
-              <div class="materials__new">
-                  <p>NEW</p>
+          <div class="menu__top-line">
+              <div class="materials">
+                  <h3 class="materials__title">Материалы</h3>
+                  <img src="#materials" alt="логотип категории Материалы">
+                  <div class="materials__new">
+                      <p>NEW</p>
+                  </div>
+                  <a class="a--btn" href="#">на любой вкус</a>
               </div>
-              <a class="a--btn" href="#">на любой вкус</a>
-          </div>
 
-          <div class="instruments">
-              <h3 class="instruments__title">Инструмент</h3>
-              <img src="#instruments" alt="логотип категории Инструмент">
-              <div class="instruments__new">
-                  <p>NEW</p>
+              <div class="instruments">
+                  <h3 class="instruments__title">Инструмент</h3>
+                  <img src="#instruments" alt="логотип категории Инструмент">
+                  <div class="instruments__new visually-hidden">
+                      <p>NEW</p>
+                  </div>
+                  <a class="a--btn" href="#">НА ВСЕ СЛУЧАИ</a>
               </div>
-              <a class="a--btn" href="#">НА ВСЕ СЛУЧАИ</a>
-          </div>
 
-          <div class="technics">
-              <h3 class="technics__title">Техника</h3>
-              <img src="#technics" alt="логотип категории Техника">
-              <div class="technics__new">
-                  <p>NEW</p>
+              <div class="technics">
+                  <h3 class="technics__title">Техника</h3>
+                  <img src="#technics" alt="логотип категории Техника">
+                  <div class="technics__new visually-hidden">
+                      <p>NEW</p>
+                  </div>
+                  <a class="a--btn" href="#">для стройки</a>
               </div>
-              <a class="a--btn" href="#">для стройки</a>
           </div>
 
           <div class="discounts">
@@ -124,7 +127,7 @@
                       <p>NEW</p>
                   </div>
               </div>
-              <div class="slider__slide">
+              <div class="slider__slide visually-hidden">
                   <h3 class="slider__title">Перфораторы</h3>
                   <p class="slider__subtitle">Настоящие мужские игрушки</p>
                   <img src="img/slider2.jpg" alt="фото перфоратора">
@@ -141,11 +144,13 @@
               <!-- Будет готов после следующих лекций -->
       </section>
 
-      <section class="popular-items">
-          <h2 class="popular-items__title">Популярные товары:</h2>
+      <section class="popular-items center-container">
+          <div class="section__head">
+              <h2 class="section__head-title">Популярные товары:</h2>
+              <a class="section__head-btn" href="#">все товары</a>
+          </div>
           <ul class="popular-items__list">
-
-              <li class="popular-items__item">
+            <li class="popular-items__item">
                   <p class="popular-items__img">
                       <img src="img/BFG9000.png" alt="Фото товара Перфоратор BOSCH BFG 9000">
                   </p>
@@ -161,16 +166,16 @@
                   <p class="popular-items__stock-price">
                       <b>25500 Р.</b>
                   </p>
-                  <div class="popular-items__new">
+                  <div class="popular-items__new visually-hidden">
                       <p>NEW</p>
                   </div>
-                  <div class="popular-items__btns">
+                  <div class="popular-items__btns visually-hidden">
                     <button class="btn" type="button">КУПИТЬ</button>
                     <button class="btn" type="button">В закладки</button>
                 </div>
-              </li>
+            </li>
 
-              <li class="popular-items__item">
+            <li class="popular-items__item">
                   <p class="popular-items__img">
                       <img src="img/BFG3000.png" alt="Фото товара Перфоратор BOSCH BFG 3000">
                   </p>
@@ -186,16 +191,16 @@
                   <p class="popular-items__stock-price">
                       <b>15500 Р.</b>
                   </p>
-                  <div class="popular-items__new">
+                  <div class="popular-items__new visually-hidden">
                       <p>NEW</p>
                   </div>
-                  <div class="popular-items__btns">
+                  <div class="popular-items__btns visually-hidden">
                     <button class="btn" type="button">КУПИТЬ</button>
                     <button class="btn" type="button">В закладки</button>
                 </div>
-              </li>
+            </li>
 
-              <li class="popular-items__item">
+            <li class="popular-items__item">
                   <p class="popular-items__img">
                       <img src="img/BFG6000.png" alt="Фото товара Перфоратор BOSCH BFG 6000">
                   </p>
@@ -211,16 +216,16 @@
                   <p class="popular-items__stock-price">
                       <b>25500 Р.</b>
                   </p>
-                  <div class="popular-items__new">
+                  <div class="popular-items__new visually-hidden">
                       <p>NEW</p>
                   </div>
-                  <div class="popular-items__btns">
+                  <div class="popular-items__btns visually-hidden">
                     <button class="btn" type="button">КУПИТЬ</button>
                     <button class="btn" type="button">В закладки</button>
                 </div>
-              </li>
+            </li>
 
-              <li class="popular-items__item">
+            <li class="popular-items__item">
                   <p class="popular-items__img">
                       <img src="img/BFG2000.png" alt="Фото товара Перфоратор BOSCH BFG 2000">
                   </p>
@@ -236,20 +241,22 @@
                   <p class="popular-items__stock-price visually-hidden">
                       <b>Цена со скидкой</b>
                   </p>
-                  <div class="popular-items__new">
+                  <div class="popular-items__new visually-hidden">
                       <p>NEW</p>
                   </div>
-                  <div class="popular-items__btns">
+                  <div class="popular-items__btns visually-hidden">
                     <button class="btn" type="button">КУПИТЬ</button>
                     <button class="btn" type="button">В закладки</button>
                 </div>
-              </li>
+            </li>
           </ul>
       </section>
 
-      <section class="popular-fabricators">
-          <h2 class="popular-fabricators__title">Популярные ПРОИзводители:</h2>
-          <a class="btn" href="#">все производители</a>
+      <section class="popular-fabricators center-container">
+          <div class="section__head">
+              <h2 class="section__head-title">Популярные ПРОИзводители:</h2>
+              <a class="section__head-btn" href="#">все производители</a>
+          </div>
 
           <ul class="popular-fabricators__list">
             <li class="popular-fabricators__item">
@@ -297,56 +304,58 @@
       </section>
 
       <section class="services">
-          <h2 class="services__title">Сервисы</h2>
-          <p class="services__txt">
-              Хороший интернет-магазин отличается от плохого не только ценами!<br>
-              Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-          </p>
-          <ul class="services__menu">
-              <li class="services__item">
-                  <p class="services__subtitle">Доставка</p>
-                  <div class="item-description">
-                      <h3 class="item-description__title">Доставка</h3>
-                      <p class="item-description__txt">
-                          Мы с удовольствием доставим ваш товар прямо <br>
-                          к вашему подъезду совершенно бесплатно!<br>
-                          Ведь мы неплохо заработаем,<br>
-                          поднимая его на ваш этаж!
-                      </p>
-                      <img src="img/delivery_logo.svg" alt="Логотип пункта Доставка">
-                  </div>
-              </li>
-              <li class="services__item visually-hidden">
-                  <p class="services__subtitle">Гарантия</p>
-                  <div class="item-description visually-hidden">
-                      <h3 class="item-description__title">Гарантия</h3>
-                      <p class="item-description__txt">
-                          Если купленный у нас товар поломается или заискрит,<br>
-                          а также в случае пожара, спровоцированного его возгоранием,<br>
-                          вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
-                          сгоревший товар на новый.<br>
-                          Дом уж восстановите как-нибудь сами.
-                      </p>
-                      <img src="img/guarantee_logo.svg" alt="Логотип пункта Гарантия">
-                  </div>
-              </li>
-              <li class="services__item">
-                  <p class="services__subtitle">Кредит</p>
-                  <div class="item-description visually-hidden">
-                      <h3 class="item-description__title">Кредит</h3>
-                      <p class="item-description__txt">
-                          Залезть в долговую яму стало проще!<br>
-                          Кредитные консультанты придут вам на помощь.
-                      </p>
-                      <a class="btn" href="#">Отправить заявку</a>
-                      <img src="img/credit_logo.svg" alt="Логотип пункта Кредит">
-                  </div>
-              </li>
-          </ul>
+          <div class="center-container">
+              <h2 class="services__title">Сервисы</h2>
+              <p class="services__txt">
+                  Хороший интернет-магазин отличается от плохого не только ценами!<br>
+                  Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+              </p>
+              <ul class="services__menu">
+                  <li class="services__item">
+                      <p class="services__subtitle">Доставка</p>
+                      <div class="item-description visually-hidden">
+                          <h3 class="item-description__title">Доставка</h3>
+                          <p class="item-description__txt">
+                              Мы с удовольствием доставим ваш товар прямо <br>
+                              к вашему подъезду совершенно бесплатно!<br>
+                              Ведь мы неплохо заработаем,<br>
+                              поднимая его на ваш этаж!
+                          </p>
+                          <img src="img/delivery_logo.svg" alt="Логотип пункта Доставка">
+                      </div>
+                  </li>
+                  <li class="services__item">
+                      <p class="services__subtitle">Гарантия</p>
+                      <div class="item-description visually-hidden">
+                          <h3 class="item-description__title">Гарантия</h3>
+                          <p class="item-description__txt">
+                              Если купленный у нас товар поломается или заискрит,<br>
+                              а также в случае пожара, спровоцированного его возгоранием,<br>
+                              вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                              сгоревший товар на новый.<br>
+                              Дом уж восстановите как-нибудь сами.
+                          </p>
+                          <img src="img/guarantee_logo.svg" alt="Логотип пункта Гарантия">
+                      </div>
+                  </li>
+                  <li class="services__item">
+                      <p class="services__subtitle">Кредит</p>
+                      <div class="item-description visually-hidden">
+                          <h3 class="item-description__title">Кредит</h3>
+                          <p class="item-description__txt">
+                              Залезть в долговую яму стало проще!<br>
+                              Кредитные консультанты придут вам на помощь.
+                          </p>
+                          <a class="btn" href="#">Отправить заявку</a>
+                          <img src="img/credit_logo.svg" alt="Логотип пункта Кредит">
+                      </div>
+                  </li>
+              </ul>
               <!-- Будет готов после следующих лекций -->
+          </div>
       </section>
 
-      <div class="main__wrap">
+      <div class="main__wrap center-container">
           <section class="info">
               <h2 class="info__title">КОМПАНИЯ «Техномарт»</h2>
               <p class="info__txt">
@@ -371,7 +380,7 @@
                   заехав в наш офис:
               </p>
               <a href="#"><img src="img/map.png" alt="Офис компании по адресу ул.Большая Конюшенная, д.19/8, Санкт-Петербург"></a>
-              <button class="btn" type="button">Заблудились? НапиШИТЕ НАМ!</button>
+              <button class="contacts__btn" type="button">Заблудились? НапиШИТЕ НАМ!</button>
           </section>
       </div>
 
