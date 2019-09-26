@@ -3,48 +3,57 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Каталог магазина Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <a class="header__logo" href="index.html">
-          <img src="img/logo-technomart.svg" alt="Логотип магазина «Техномарт»">
-      </a>
+     <div class="header__top-wrap">
+      <div class="header__top-line">
+          <a class="header__logo" href="index.html">
+            <img src="img/logo-technomart.svg" alt="Логотип магазина «Техномарт»">
+          </a>
 
-      <p class="header__search">
-        <input type="text" id="search" name="search">
-        <label for="search">Поиск</label>
-        <button class="btn"  type="button">Поиск</button>
-      </p>
+          <form class="header__search" action="" method="get">
+            <input type="text" id="search" name="search" value="Поиск">
+            <!-- ПОКА НЕ МОГУ КОРРЕКТНО СОСТАВИТЬ СТИЛИЗАЦИЮ, ПОЭТОМУ ЗАКОММЕНТИРОВАЛ -->
+            <!--<label for="search">Поиск</label>-->
+            <!--<button class="search__btn"  type="submit"></button>-->
+          </form>
 
-      <ul class="header__interface">
-        <li><a href="#">Закладки:</a></li>
-        <li><a href="#">Корзина:</a></li>
-        <li><a href="#">Оформить заказ</a></li>
-      </ul>
+          <ul class="header__interface">
+            <li><a href="#">Закладки:</a></li>
+            <li><a href="#">Корзина:</a></li>
+            <li><a class="a--green" href="#">Оформить заказ</a></li>
+          </ul>
+      </div>
+     </div>
 
-      <div class="header__info">
-        <p class="header__txt">
-            Интернет-магазин<br>
-            строительных материалов<br>
-            и инструментов для ремонта
-        </p>
-        <p class="header__contacts">
-            +7 (812) 555-05-55<br>
-            <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-        </p>
+      <div class="header__mid-line">
+
+          <p class="header__txt">
+              Интернет-магазин<br>
+              строительных материалов<br>
+              и инструментов для ремонта
+          </p>
+
+          <div class="header__contacts">
+              <p class="header__tel">
+                  +7 (812) 555-05-55
+              </p>
+              <p class="header__geo">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
+
+
+          <ul class="user-navigation">
+            <li><a class="login-link" href="#">Войти</a></li>
+            <li><a class="registration-link" href="#">Регистрация</a></li>
+          </ul>
       </div>
 
-      <ul class="user-navigation">
-        <li><a href="#">Равшан Джамшутович</a></li>
-        <li><a href="#">Выход</a></li>
-        <li><a href="#">Мои заказы</a></li>
-        <li><a href="#">Личный кабинет</a></li>
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Регистрация</a></li>
-      </ul>
-
-      <nav class="site-navigation">
-          <ul>
+      <nav class="header__navigation">
+          <ul class="site-navigation">
             <li><a href="index.html">Главная</a></li>
             <li><a href="#">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
@@ -56,8 +65,8 @@
       </nav>
     </header>
 
-    <main class="container">
-      <h1 class="container__title">ПЕРФОРАТОРЫ</h1>
+
+    <main class="container center-container">
 
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
@@ -65,6 +74,8 @@
         <li><a href="#">Инструмент</a></li>
         <li class="breadcrumbs__current">Перфораторы</li>
       </ul>
+
+      <h1 class="container__title">ПЕРФОРАТОРЫ</h1>
 
       <section class="filters">
         <h2 class="filters__title">ФИЛЬТР:</h2>
@@ -399,7 +410,7 @@
         </ul>
       </section>
 
-      <section class="about-container">
+      <section class="about-container center-container">
         <h2 class="about-container__title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
         <p class="about-container__txt">
             Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
@@ -420,47 +431,68 @@
     </main>
 
     <footer class="footer">
-      <a class="footer__logo">
-        <img src="img/logo-technomart.svg" alt="Логотип магазина «Техномарт»">
-      </a>
-      <nav class="site-navigation">
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <p class="footer__contacts">
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-        +7 (812) 555-05-55
-      </p>
-      <ul class="items-navigation">
-        <li><a href="#">Материалы</a></li>
-        <li><a href="#">Техника</a></li>
-        <li><a href="#">Инструмент</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-      </ul>
-      <p class="footer__copyright">
-        © 2010–2019 Компания «Техномарт»<br>
-        Все права защищены
-      </p>
-      <ul class="footer__socials">
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
-      </ul>
-      <ul class="footer__feedback">
-        <li>
-            Обратная связь:<br>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
-        <li>
-            Разработано —<br>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </li>
-      </ul>
+      <div class="footer__top-line">
+          <a class="footer__logo">
+              <img src="img/logo-technomart.svg" alt="Логотип магазина «Техномарт»">
+          </a>
+          <nav>
+              <ul class="footer__navigation">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+          </nav>
+      </div>
+      <div class="footer__mid-line">
+          <p class="footer__contacts">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+              +7 (812) 555-05-55
+          </p>
+          <ul class="items-navigation">
+              <li><a href="#">Материалы</a></li>
+              <li><a href="#">Техника</a></li>
+              <li><a href="#">Инструмент</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+          </ul>
+      </div>
+
+      <div class="footer__bottom-wrap">
+         <div class="footer__bottom-line">
+              <p class="footer__copyright">
+                  © 2010–2019 Компания «Техномарт»<br>
+                  Все права защищены
+              </p>
+              <ul class="footer__socials">
+                  <li class="social__item">
+                      <a href="#">
+                          <img src="img/icon-vk.svg" alt="Ссылка на группу страницу во Вконтакте">
+                      </a>
+                  </li>
+                  <li class="social__item">
+                      <a href="#">
+                          <img src="img/icon-fb.svg" alt="Ссылка на группу страницу в Facebook">
+                      </a>
+                  </li>
+                  <li class="social__item">
+                      <a href="#">
+                          <img src="img/icon-insta.svg" alt="Ссылка на страницу магазина в Instagram">
+                      </a>
+                  </li>
+              </ul>
+            <ul class="footer__feedback">
+                <li>
+                    Обратная связь:<br>
+                    <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                </li>
+                <li>
+                    Разработано —<br>
+                    <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                </li>
+              </ul>
+         </div>
+      </div>
     </footer>
   </body>
 </html>
