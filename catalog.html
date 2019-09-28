@@ -5,9 +5,46 @@
     <title>HTML Academy: Каталог магазина Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-catalog.css" rel="stylesheet">
   </head>
   <body>
+    <!-- ICON'S (У КОТОРЫХ МЕНЯЕТСЯ ЦВЕТ) -->
+   <svg style="display: none;">
+       <symbol id="bookmark-icon" viewBox="0 0 14 16">
+           <g>
+               <path d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
+           </g>
+       </symbol>
+
+       <symbol id="cart-icon" viewBox="0 0 15 15">
+           <g>
+               <circle cx="4.5" cy="13.5" r="1.5"/>
+               <circle cx="12.5" cy="13.5" r="1.5"/>
+               <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+           </g>
+       </symbol>
+
+       <symbol id="search-icon" viewBox="0 0 17 17">
+           <g>
+               <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+           </g>
+       </symbol>
+
+       <symbol id="phone-icon" viewBox="0 0 19 19">
+               <g>
+                   <path d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z"/>
+             </g>
+       </symbol>
+
+       <symbol id="login-icon" viewBox="0 0 20 17">
+               <g>
+                   <path d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+                   <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+               </g>
+       </symbol>
+   </svg>
+
+   <!-- HEADER -->
     <header class="header">
      <div class="header__top-wrap">
       <div class="header__top-line">
@@ -16,16 +53,30 @@
           </a>
 
           <form class="header__search" action="" method="get">
-            <input type="text" id="search" name="search" value="Поиск">
-            <!-- ПОКА НЕ МОГУ КОРРЕКТНО СОСТАВИТЬ СТИЛИЗАЦИЮ, ПОЭТОМУ ЗАКОММЕНТИРОВАЛ -->
-            <!--<label for="search">Поиск</label>-->
-            <!--<button class="search__btn"  type="submit"></button>-->
+            <input type="text" class="search__input" name="search-input" placeholder="Поиск:">
+            <button class="search__button">
+                <svg class="search__icon"><use xlink:href="#search-icon"></use></svg>
+            </button>
           </form>
 
           <ul class="header__interface">
-            <li><a href="#">Закладки:</a></li>
-            <li><a href="#">Корзина:</a></li>
-            <li><a class="a--green" href="#">Оформить заказ</a></li>
+            <li>
+                <div class="interface__content">
+                    <svg class="bookmark-icon">
+                        <use xlink:href="#bookmark-icon"></use>
+                    </svg>
+                    <a class="bookmark-btn" href="#">Закладки: 110</a>
+                </div>
+            </li>
+            <li>
+                <div class="interface__content">
+                    <svg class="cart-icon">
+                        <use xlink:href="#cart-icon"></use>
+                    </svg>
+                    <a class="cart-btn" href="#">Корзина: 110</a>
+                </div>
+            </li>
+            <li><a class="order-btn" href="#">Оформить заказ</a></li>
           </ul>
       </div>
      </div>
@@ -39,15 +90,23 @@
           </p>
 
           <div class="header__contacts">
-              <p class="header__tel">
-                  +7 (812) 555-05-55
-              </p>
+              <div class="phone__content">
+                  <svg class="phone-icon">
+                      <use xlink:href="#phone-icon"></use>
+                  </svg>
+                  <p class="header__tel">
+                      +7 (812) 555-05-55
+                  </p>
+              </div>
               <p class="header__geo">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
 
 
           <ul class="user-navigation">
-            <li><a class="login-link" href="#">Войти</a></li>
+            <li class="user-navigation__content">
+                <svg class="login-icon"><use xlink:href="#login-icon"></use></svg>
+                <a class="login-link" href="catalog.html">Войти</a>
+            </li>
             <li><a class="registration-link" href="#">Регистрация</a></li>
           </ul>
       </div>
@@ -65,8 +124,8 @@
       </nav>
     </header>
 
-
     <main class="container center-container">
+      <h1 class="container__title">ПЕРФОРАТОРЫ</h1>
 
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
@@ -75,7 +134,6 @@
         <li class="breadcrumbs__current">Перфораторы</li>
       </ul>
 
-      <h1 class="container__title">ПЕРФОРАТОРЫ</h1>
 
       <section class="filters">
         <h2 class="filters__title">ФИЛЬТР:</h2>
@@ -430,7 +488,9 @@
       </section>
     </main>
 
+<!-- FOOTER -->
     <footer class="footer">
+
       <div class="footer__top-line">
           <a class="footer__logo">
               <img src="img/logo-technomart.svg" alt="Логотип магазина «Техномарт»">
