@@ -55,6 +55,18 @@
                    <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
            </g>
        </symbol>
+
+       <symbol id="up-dir" viewBox="0 0 11 10">
+               <g>
+                   <path d="M5.5 0L0 10h11z"/>
+               </g>
+       </symbol>
+
+       <symbol id="down-dir" viewBox="0 0 11 10">
+               <g>
+                   <path d="M5.5 10L0 0h11"/>
+           </g>
+       </symbol>
    </svg>
 
    <!-- HEADER -->
@@ -260,12 +272,20 @@
 
                     <li class="sort__item">
                         <input class="sort__radio" type="radio" id="sort-min" name="min-max-group" checked>
-                        <label for="sort-min">По возрастанию</label>
+                        <label for="sort-min" class="sort-min-arrow" aria-label="По возрастанию">
+                            <svg class="up-dir-icon">
+                                <use xlink:href="#up-dir"></use>
+                            </svg>
+                        </label>
                     </li>
 
                     <li class="sort__item">
                         <input class="sort__radio" type="radio" id="sort-max" name="min-max-group">
-                        <label for="sort-max">По убыванию</label>
+                        <label for="sort-max" class="sort-max-arrow" aria-label="По убыванию">
+                            <svg class="down-dir-icon">
+                                <use xlink:href="#down-dir"></use>
+                            </svg>
+                        </label>
                     </li>
                 </ul>
             </form>

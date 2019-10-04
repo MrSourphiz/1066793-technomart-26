@@ -802,12 +802,16 @@ ul {
 .range-toggle:hover {
   background: #1c4f80;
 }
+
+
+.power__radio {
+    display: none;
+}
                               /* SORTS */
 .sorts {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
 
     width: 700px;
     height: 18px;
@@ -836,12 +840,70 @@ ul {
     color: #000000;
 
     margin: 0;
+    margin-left: 19px;
+    margin-right: 137px;
 }
 
 .sort__list {
     display: flex;
     flex-direction: row;
 }
+
+.sort__item {
+    position: relative;
+    margin-right: 50px;
+}
+
+.sort__item:nth-child(4) {
+    margin-right: 20px;
+}
+
+.sort__item:last-child {
+    margin-right: 17px;
+}
+
+.sort__item label {
+    cursor: pointer;
+    color: #c5c5c5;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #ee3643;
+}
+
+.sort__item label:hover {
+    color: #231f20;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #ee3643;
+}
+
+.sort__radio {
+    display: none;
+}
+
+.sort__radio:checked ~ label{
+    color: #ee3643;
+    text-decoration: none;
+}
+
+.sort__item svg {
+    width: 11px;
+    height: 10px;
+
+    fill: #c5c5c5;
+}
+
+.sort-min-arrow:hover > svg,
+.sort-max-arrow:hover > svg {
+    fill: #231f20;
+}
+
+
+.sort__radio:checked + label > svg {
+    fill: #ee3643;
+}
+
+
 
                               /* CATALOG */
 
