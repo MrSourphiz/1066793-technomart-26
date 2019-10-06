@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Каталог магазина Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style-catalog.css" rel="stylesheet">
   </head>
   <body>
     <!-- ICON'S (У КОТОРЫХ МЕНЯЕТСЯ ЦВЕТ) -->
-   <svg style="display: none;">
+   <svg class="visually-hidden">
        <symbol id="bookmark-icon" viewBox="0 0 14 16">
            <g>
                <path d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
@@ -77,7 +77,7 @@
             <img src="img/logo-technomart.svg" alt="Логотип магазина «Техномарт»">
           </a>
 
-          <form class="header__search" action="" method="get">
+          <form class="header__search" action="catalog.html" method="get">
             <input type="text" class="search__input" name="search-input" placeholder="Поиск:">
             <button class="search__button">
                 <svg class="search__icon"><use xlink:href="#search-icon"></use></svg>
@@ -137,7 +137,7 @@
 
           <ul class="account-navigation">
               <li class="account-top-line">
-                  <div class="profile-content" href="#">
+                  <div class="profile-content">
                       <svg class="user-icon">
                           <use xlink:href="#user-icon"></use>
                       </svg>
@@ -197,18 +197,18 @@
                            <div class="range-toggle range-toggle-min"></div>
                            <div class="range-toggle range-toggle-max"></div>
                     </div>
-                    <div>
+                    <div class="price__area">
                         <label class="price__min">
-                            от <input  type="text" name="price-min" value="0">
+                            <input  type="text" name="price-min" value="0">
                         </label>
-                        <span>-</span>
+                        <span class="price__line">-</span>
                         <label class="price__max">
-                            до <input  type="text" name="price-max" value="30000">
+                            <input  type="text" name="price-max" value="30000">
                         </label>
                     </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="filter__fabricators">
                     <legend>ПРОИЗВОДИТЕЛИ:</legend>
                     <ul class="fabricators">
                         <li class="fabricators__item">
@@ -234,7 +234,7 @@
                     </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="filter__power">
                     <legend>ПИТАНИЕ:</legend>
                     <ul class="power">
                         <li class="power__item">
@@ -248,7 +248,7 @@
                     </ul>
                 </fieldset>
             </form>
-            <button class="btn" type="submit">ПОКАЗАТЬ</button>
+            <button class="filters__btn" type="submit">ПОКАЗАТЬ</button>
           </section>
 
           <section class="sorts">
@@ -510,11 +510,15 @@
 <!-- POPUP'S -->
       <section class="popup-buy visually-hidden">
           <h2 class="visually-hidden">Добавление товара в корзину</h2>
-          <img src="img/popup-done.svg" alt="Товар добавлен в корзину!">
+          <img src="img/popup-done.png" alt="Товар добавлен в корзину!">
           <p>Товар добавлен в корзину!</p>
-          <button class="btn" type="button">Оформить заказ</button>
-          <button class="btn" type="button">Продолжить покупки</button>
-          <button class="btn-close" type="button">Закрыть</button>
+          <div class="popup-buy__buttons">
+              <button class="btn" type="button">Оформить заказ</button>
+              <button class="btn" type="button">Продолжить покупки</button>
+          </div>
+          <button class="popup__close" type="button">
+              <span class="visually-hidden">Закрыть</span>
+          </button>
       </section>
     </main>
 

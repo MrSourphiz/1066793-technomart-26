@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
    <!-- ICON'S (У КОТОРЫХ МЕНЯЕТСЯ ЦВЕТ) -->
-   <svg style="display: none;">
+   <svg class="visually-hidden">
        <symbol id="bookmark-icon" viewBox="0 0 14 16">
            <g>
                <path d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
@@ -52,7 +52,7 @@
             <img src="img/logo-technomart.svg" alt="Логотип магазина «Техномарт»">
           </a>
 
-          <form class="header__search" action="" method="get">
+          <form class="header__search" action="catalog.html" method="get">
             <input type="text" class="search__input" name="search-input" placeholder="Поиск:">
             <button class="search__button">
                 <svg class="search__icon"><use xlink:href="#search-icon"></use></svg>
@@ -65,7 +65,7 @@
                     <svg class="bookmark-icon">
                         <use xlink:href="#bookmark-icon"></use>
                     </svg>
-                    <a class="bookmark-btn" href="#">Закладки: 110</a>
+                    <a class="bookmark-btn" href="#">Закладки: 0</a>
                 </div>
             </li>
             <li>
@@ -73,7 +73,7 @@
                     <svg class="cart-icon">
                         <use xlink:href="#cart-icon"></use>
                     </svg>
-                    <a class="cart-btn" href="#">Корзина: 110</a>
+                    <a class="cart-btn" href="#">Корзина: 0</a>
                 </div>
             </li>
             <li><a class="order-btn" href="#">Оформить заказ</a></li>
@@ -165,36 +165,41 @@
           </div>
 
           <div class="slider">
-              <div class="slider__slide">
-                  <div class="slide__txt">
-                      <h3 class="slide__title">Дрели</h3>
-                      <p class="slide__subtitle">Соседям на радость!</p>
-                  </div>
-                  <img src="img/slider1.jpg" alt="фото дрели">
+
+              <input class="slide-1 visually-hidden" type="radio" id="slide-1" name="slide-group" checked>
+              <input class="slide-2 visually-hidden" type="radio" id="slide-2" name="slide-group" >
+
+              <ul class="slider__list">
+                  <li class="slider__item">
+                      <div class="slide__txt">
+                          <h3 class="slide__title">Дрели</h3>
+                          <p class="slide__subtitle">Соседям на радость!</p>
+                      </div>
+                      <img src="img/slider1.jpg" alt="фото дрели">
+                  </li>
+
+                  <li class="slider__item visually-hidden">
+                      <div class="slide__txt">
+                          <h3 class="slide__title">Перфораторы</h3>
+                          <p class="slide__subtitle">Настоящие мужские игрушки</p>
+                      </div>
+                      <img src="img/slider2.jpg" alt="фото дрели">
+                  </li>
+              </ul>
+
+             <div class="slider__control-prev">
+                  <label class="slider__arrow-left" for="slide-1"></label>
+                  <label class="slider__arrow-left" for="slide-2"></label>
               </div>
 
-              <div class="slider__slide visually-hidden">
-                  <div class="slide__txt">
-                      <h3 class="slide__title">Перфораторы</h3>
-                      <p class="slide__subtitle">Настоящие мужские игрушки</p>
-                  </div>
-                  <img src="img/slider2.jpg" alt="фото дрели">
+              <div class="slider__control-next">
+                  <label class="slider__arrow-right" for="slide-1"></label>
+                  <label class="slider__arrow-right" for="slide-2"></label>
               </div>
 
-              <div class="slider__controls">
-                  <button class="slider__arrow-left" type="button">
-                      <img src="img/icon-left.svg" alt="Назад">
-                  </button>
-                  <button class="slider__arrow-right" type="button">
-                      <img src="img/icon-right.svg" alt="Вперед">
-                  </button>
-              </div>
-
-              <div class="slider__radio">
-                  <input class="slide__radio" type="radio" id="slide-1" value="slide-1"  name="slide-group" checked>
-                  <label for="slide-1">Слайд 1</label>
-                  <input class="slide__radio" type="radio" id="slide-2" value="slide-2"  name="slide-group">
-                  <label for="slide-2">Слайд 2</label>
+              <div class="slider__switchers">
+                 <label class="slider__switch" for="slide-1"></label>
+                 <label class="slider__switch" for="slide-2"></label>
               </div>
 
               <a class="slide__btn" href="#">ОТКРЫТЬ КАТАЛОГ</a>
@@ -468,29 +473,36 @@
 <!-- POPUP'S -->
       <section class="popup-map visually-hidden">
           <h2 class="visually-hidden">Увеличенная карта</h2>
-          <img src="img/big-map.jpg" alt="Офис компании по адресу ул.Большая Конюшенная, д.19/8, Санкт-Петербург">
-          <button class="btn-close" type="button">Закрыть</button>
+          <img src="img/big-map.png" alt="Офис компании по адресу ул.Большая Конюшенная, д.19/8, Санкт-Петербург">
+          <button class="popup__close" type="button">
+              <span class="visually-hidden">Закрыть</span>
+          </button>
       </section>
 
       <section class="popup-email visually-hidden">
           <h2 class="visually-hidden">Отправить e-mail</h2>
-          <form class="contacts__form" action="mailto:mail@technomart.ru" method="post">
-             <p>
+          <form class="popup-email__form" action="mailto:mail@technomart.ru" method="post">
+             <p class="popup-email__name">
               <label for="user-name">Ваше имя:</label>
               <input type="text" id="user-name" placeholder="Имя Фамилия">
              </p>
-             <p>
+             <p class="popup-email__name">
               <label for="user-email">Ваш e-mail:</label>
               <input type="email" id="user-email" placeholder="email@example.com">
              </p>
-             <p>
+             <p class="popup-email__text">
               <label for="user-text">Текст письма:</label>
               <textarea id="user-text" rows="10" cols="45" placeholder="В свободной форме"></textarea>
              </p>
-
-              <button class="btn" type="submit">Отправить</button>
           </form>
-          <button class="btn-close" type="button">Закрыть</button>
+
+          <div class="popup-email__wrap">
+              <button class="popup-email__button"  type="submit">Отправить</button>
+          </div>
+
+          <button class="popup__close" type="button">
+              <span class="visually-hidden">Закрыть</span>
+          </button>
       </section>
     </main>
 
