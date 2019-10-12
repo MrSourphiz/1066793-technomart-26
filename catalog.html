@@ -73,8 +73,8 @@
     <header class="header">
      <div class="header__top-wrap">
       <div class="header__top-line">
-          <a class="header__logo" href="index.html">
-            <img src="img/logo-technomart.svg" alt="Логотип магазина «Техномарт»">
+          <a class="header__logo" href="index.html" aria-label="Возврат на главную страницу">
+            <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип магазина «Техномарт»">
           </a>
 
           <form class="header__search" action="catalog.html" method="get">
@@ -119,21 +119,19 @@
                   <svg class="phone-icon">
                       <use xlink:href="#phone-icon"></use>
                   </svg>
-                  <p class="header__tel">
-                      +7 (812) 555-05-55
-                  </p>
+                  <a class="header__tel" href="tel:88125550555">+7 (812) 555-05-55</a>
               </div>
               <p class="header__geo">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
 
 
-      <!--<ul class="user-navigation visually-hidden">
+          <ul class="user-navigation visually-hidden">
             <li class="user-navigation__content">
                 <svg class="login-icon"><use xlink:href="#login-icon"></use></svg>
                 <a class="login-link" href="catalog.html">Войти</a>
             </li>
             <li><a class="registration-link" href="#">Регистрация</a></li>
-          </ul>-->
+          </ul>
 
           <ul class="account-navigation">
               <li class="account-top-line">
@@ -141,17 +139,17 @@
                       <svg class="user-icon">
                           <use xlink:href="#user-icon"></use>
                       </svg>
-                      <a class="profile-link" href="#">Равшан Джамшутович</a>
+                      <a class="profile-link" href="#" aria-label="Имя пользователя">Равшан Джамшутович</a>
                   </div>
-                  <a class="exit-link" href="#">
+                  <a class="exit-link" href="#" aria-label="Выход из аккаунта">
                       <svg class="logout-icon">
                           <use xlink:href="#logout-icon"></use>
                       </svg>
                   </a>
               </li>
               <li class="account-bottom-line">
-                  <a class="order-link" href="#">Мои заказы</a>
-                  <a class="account-link" href="#">Личный кабинет</a>
+                  <a href="#">Мои заказы</a>
+                  <a href="#">Личный кабинет</a>
               </li>
           </ul>
 
@@ -174,7 +172,7 @@
       <div class="center-container">
           <ul class="breadcrumbs">
             <li>
-                <a href="index.html"><img src="img/icon-home.svg" alt="Ссылка на Главную страницу"></a>
+                <a href="index.html"><img src="img/icon-home.svg" width="15" height="12" alt="Ссылка на Главную страницу"></a>
             </li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="#">Инструмент</a></li>
@@ -296,18 +294,18 @@
             <ul class="catalog__list">
                 <li class="catalog__item">
                       <div class="flag visually-hidden">
-                          <img src="img/new-flag.png" alt="Маркировка нового товара">
+                          <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="#">КУПИТЬ</a>
+                        <a class="buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
-                          <img src="img/BFG3000.png" alt="Фото товара Перфоратор BOSCH BFG 3000">
+                          <img src="img/BFG3000.png" width="218" height="170" alt="Фото товара Перфоратор BOSCH BFG 3000">
                       </div>
                       <a href="#">
                           <p class="item__title">
-                              Перфоратор BOSCH<br>
+                             Перфоратор BOSCH<br>
                              BFG 3000
                           </p>
                       </a>
@@ -317,14 +315,14 @@
 
                 <li class="catalog__item">
                       <div class="flag visually-hidden">
-                          <img src="img/new-flag.png" alt="Маркировка нового товара">
+                          <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="#">КУПИТЬ</a>
+                        <a class="buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
-                          <img src="img/BFG6000.png" alt="Фото товара Перфоратор BOSCH BFG 6000">
+                          <img src="img/BFG6000.png" width="218" height="170" alt="Фото товара Перфоратор BOSCH BFG 6000">
                       </div>
                       <a href="#">
                           <p class="item__title">
@@ -338,14 +336,14 @@
 
                 <li class="catalog__item">
                       <div class="flag">
-                          <img src="img/new-flag.png" alt="Маркировка нового товара">
+                          <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="#">КУПИТЬ</a>
+                        <a class="buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
-                          <img src="img/BFG2000.png" alt="Фото товара Перфоратор BOSCH BFG 2000">
+                          <img src="img/BFG2000.png" width="218" height="170" alt="Фото товара Перфоратор BOSCH BFG 2000">
                       </div>
                       <a href="#">
                           <p class="item__title">
@@ -359,14 +357,14 @@
 
                 <li class="catalog__item">
                       <div class="flag visually-hidden">
-                          <img src="img/new-flag.png" alt="Маркировка нового товара">
+                          <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="#">КУПИТЬ</a>
+                        <a class="buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
-                          <img src="img/BFG3000.png" alt="Фото товара Перфоратор BOSCH BFG 3000">
+                          <img src="img/BFG3000.png" width="218" height="170" alt="Фото товара Перфоратор BOSCH BFG 3000">
                       </div>
                       <a href="#">
                           <p class="item__title">
@@ -380,14 +378,14 @@
 
                 <li class="catalog__item">
                       <div class="flag">
-                          <img src="img/new-flag.png" alt="Маркировка нового товара">
+                          <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="#">КУПИТЬ</a>
+                        <a class="buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
-                          <img src="img/BFG6000.png" alt="Фото товара Перфоратор BOSCH BFG 6000">
+                          <img src="img/BFG6000.png" width="218" height="170" alt="Фото товара Перфоратор BOSCH BFG 6000">
                       </div>
                       <a href="#">
                           <p class="item__title">
@@ -401,14 +399,14 @@
 
                 <li class="catalog__item">
                       <div class="flag visually-hidden">
-                          <img src="img/new-flag.png" alt="Маркировка нового товара">
+                          <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="#">КУПИТЬ</a>
+                        <a class="buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
-                          <img src="img/BFG2000.png" alt="Фото товара Перфоратор BOSCH BFG 2000">
+                          <img src="img/BFG2000.png" width="218" height="170" alt="Фото товара Перфоратор BOSCH BFG 2000">
                       </div>
                       <a href="#">
                           <p class="item__title">
@@ -422,14 +420,14 @@
 
                 <li class="catalog__item">
                       <div class="flag">
-                          <img src="img/new-flag.png" alt="Маркировка нового товара">
+                          <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="#">КУПИТЬ</a>
+                        <a class="buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
-                          <img src="img/BFG3000.png" alt="Фото товара Перфоратор BOSCH BFG 3000">
+                          <img src="img/BFG3000.png" width="218" height="170" alt="Фото товара Перфоратор BOSCH BFG 3000">
                       </div>
                       <a href="#">
                           <p class="item__title">
@@ -443,14 +441,14 @@
 
                 <li class="catalog__item">
                       <div class="flag visually-hidden">
-                          <img src="img/new-flag.png" alt="Маркировка нового товара">
+                          <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="#">КУПИТЬ</a>
+                        <a class="buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
-                          <img src="img/BFG6000.png" alt="Фото товара Перфоратор BOSCH BFG 6000">
+                          <img src="img/BFG6000.png" width="218" height="170" alt="Фото товара Перфоратор BOSCH BFG 6000">
                       </div>
                       <a href="#">
                           <p class="item__title">
@@ -464,14 +462,14 @@
 
                 <li class="catalog__item">
                       <div class="flag visually-hidden">
-                          <img src="img/new-flag.png" alt="Маркировка нового товара">
+                          <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="#">КУПИТЬ</a>
+                        <a class="buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
-                          <img src="img/BFG2000.png" alt="Фото товара Перфоратор BOSCH BFG 2000">
+                          <img src="img/BFG2000.png" width="218" height="170" alt="Фото товара Перфоратор BOSCH BFG 2000">
                       </div>
                       <a href="#">
                           <p class="item__title">
@@ -527,11 +525,11 @@
 
       <div class="footer__top-line">
           <a class="footer__logo">
-              <img src="img/logo-technomart.svg" alt="Логотип магазина «Техномарт»">
+              <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип магазина «Техномарт»">
           </a>
           <nav>
               <ul class="footer__navigation">
-                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">Компания</a></li>
                 <li><a href="#">Новости</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="#">Доставка</a></li>
@@ -561,28 +559,28 @@
               <ul class="footer__socials">
                   <li class="social__item">
                       <a href="#">
-                          <img src="img/icon-vk.svg" alt="Ссылка на группу страницу во Вконтакте">
+                          <img src="img/icon-vk.svg" width="26" height="15" alt="Ссылка на страницу магазина во Вконтакте">
                       </a>
                   </li>
                   <li class="social__item">
                       <a href="#">
-                          <img src="img/icon-fb.svg" alt="Ссылка на группу страницу в Facebook">
+                          <img src="img/icon-fb.svg" width="12" height="22" alt="Ссылка на страницу магазина в Facebook">
                       </a>
                   </li>
                   <li class="social__item">
                       <a href="#">
-                          <img src="img/icon-insta.svg" alt="Ссылка на страницу магазина в Instagram">
+                          <img src="img/icon-insta.svg" width="21" height="21" alt="Ссылка на страницу магазина в Instagram">
                       </a>
                   </li>
               </ul>
             <ul class="footer__feedback">
                 <li>
                     Обратная связь:<br>
-                    <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                    <a href="mailto:mail@htmlacademy.ru" aria-label="Написать письмо разработчику">mail@htmlacademy.ru</a>
                 </li>
                 <li>
                     Разработано —<br>
-                    <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                    <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на сайт разработчика">htmlacademy.ru</a>
                 </li>
               </ul>
          </div>
