@@ -245,7 +245,7 @@
                       <label class="slider__switch" for="slide-2"></label>
                   </div>
 
-                  <a class="slide__btn" href="#">ОТКРЫТЬ КАТАЛОГ</a>
+                  <a class="slide__btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
              </li>
 
              <li class="menu__double-item">
@@ -517,7 +517,7 @@
                   Вы можете забрать товар сами,<br>
                   заехав в наш офис:
               </p>
-              <a href="map.html"><img src="img/map.png" alt="Офис компании по адресу ул.Большая Конюшенная, д.19/8, Санкт-Петербург"></a>
+              <a href="map.html" class="open-map"><img src="img/map.png" alt="Офис компании по адресу ул.Большая Конюшенная, д.19/8, Санкт-Петербург"></a>
               <a class="contacts__btn" href="writeus.html">Заблудились? НапиШИТЕ НАМ!</a>
           </section>
       </div>
@@ -525,6 +525,9 @@
 <!-- POPUP'S -->
       <section class="popup-map visually-hidden">
           <h2 class="visually-hidden">Увеличенная карта</h2>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="940" height="446" allowfullscreen></iframe>
+
           <img src="img/big-map.png" alt="Офис компании по адресу ул.Большая Конюшенная, д.19/8, Санкт-Петербург">
           <button class="popup__close" type="button">
               <span class="visually-hidden">Закрыть</span>
@@ -536,15 +539,15 @@
           <form class="popup-email__form" action="mailto:mail@technomart.ru" method="post">
              <p class="popup-email__name">
               <label for="user-name">Ваше имя:</label>
-              <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+              <input type="text" id="user-name" name="user-name" value="" placeholder="Имя Фамилия">
              </p>
              <p class="popup-email__name">
               <label for="user-email">Ваш e-mail:</label>
-              <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
+              <input type="email" id="user-email" name="user-email" value="" placeholder="email@example.com">
              </p>
              <p class="popup-email__text">
               <label for="user-text">Текст письма:</label>
-              <textarea id="user-text" name="user-text" rows="10" cols="45" placeholder="В свободной форме"></textarea>
+              <textarea id="user-text" name="user-text" rows="10" cols="45" value="" placeholder="В свободной форме"></textarea>
              </p>
           </form>
 
@@ -667,7 +670,7 @@
             if (!name.value || !email.value|| !text.value) {
                   evt.preventDefault();
                   popup.classList.add("popup__error");
-                popup.offsetWidth = popup.offsetWidth;
+                  popup.offsetWidth = popup.offsetWidth;
                   popup.classList.add("popup__error");
             } else {
               if (isStorageSupport) {
@@ -677,13 +680,37 @@
             }
           });
 
-        window.addEventListener("keydown", function (evt) {
+          window.addEventListener("keydown", function (evt) {
             if (evt.keyCode === 27) {
                   evt.preventDefault();
                   if (popup.classList.contains("popup__show")) {
                     popup.classList.remove("popup__show");
                     popup.classList.remove("popup__error");
-                  }
+              }
+            }
+          });
+
+
+          var mapLink = document.querySelector(".open-map");
+          var mapPopup = document.querySelector(".popup-map");
+          var mapClose = mapPopup.querySelector(".popup__close");
+
+          mapLink.addEventListener("click", function (evt) {
+              evt.preventDefault();
+              mapPopup.classList.add("popup__show");
+          });
+
+          mapClose.addEventListener("click", function (evt) {
+              evt.preventDefault();
+              mapPopup.classList.remove("popup__show");
+          });
+
+          window.addEventListener("keydown", function (evt) {
+              if (evt.keyCode === 27) {
+                if (mapPopup.classList.contains("popup__show")) {
+                    evt.preventDefault();
+                    mapPopup.classList.remove("popup__show");
+              }
             }
           });
     </script>

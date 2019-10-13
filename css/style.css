@@ -1728,29 +1728,7 @@
 }
 
 .popup__error {
-      animation: shake 0.6s;
-}
-
-.popup-map {
-    position: fixed;
-    z-index: 2000;
-    top: 40%;
-    left: 25.35%;
-
-    width: 940px;
-    height: 446px;
-
-    background-color: #565656;
-    box-shadow: 5px 5px 5px rgba(122,122,122,0.5);
-
-    overflow: hidden;
-}
-
-.popup-map img {
-    position: absolute;
-    top: -57%;
-    left: -15%;
-
+    animation: shake 0.6s;
 }
 
 .popup-email {
@@ -1881,6 +1859,8 @@ popup-email__text label {
     top: 7px;
     right: 7px;
 
+    z-index: 3000;
+
     width: 22px;
     height: 22px;
 
@@ -1911,6 +1891,37 @@ popup-email__text label {
 .popup__close::after {
     transform: rotate(-45deg);
 }
+
+.popup-map {
+    position: fixed;
+    z-index: 2000;
+    top: 40%;
+    left: 25.35%;
+
+    width: 940px;
+    height: 446px;
+
+    background-color: #565656;
+    box-shadow: 5px 5px 5px rgba(122,122,122,0.5);
+
+    overflow: hidden;
+}
+
+.popup-map img {
+    position: absolute;
+    top: -57%;
+    left: -15%;
+
+    z-index: 1;
+}
+
+.popup-map iframe {
+    position: relative;
+    z-index: 2;
+
+    border: none;
+}
+
 
                               /* FOOTER */
 .footer {
