@@ -15,8 +15,8 @@ var storage = "";
 
 try {
     storage = localStorage.getItem("name");
-    }  catch (err) {
-           isStorageSupport = false;
+}      catch (err) {
+        isStorageSupport = false;
        }
 
 link.addEventListener("click", function (evt) {
@@ -87,7 +87,7 @@ window.addEventListener("keydown", function (evt) {
 
                     /*POPUP BUY*/
 
-var buyLink = document.querySelector(".open__popup-buy");
+var buyLink = document.querySelectorAll(".open__popup-buy");
 var buyPopup = document.querySelector(".popup-buy");
 var buyClose = buyPopup.querySelector(".popup__close");
 
