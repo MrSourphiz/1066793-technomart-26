@@ -297,7 +297,7 @@
                           <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="buy.html">КУПИТЬ</a>
+                        <a class="buy open__popup-buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
@@ -318,7 +318,7 @@
                           <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="buy.html">КУПИТЬ</a>
+                        <a class="buy open__popup-buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
@@ -339,7 +339,7 @@
                           <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="buy.html">КУПИТЬ</a>
+                        <a class="buy open__popup-buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
@@ -360,7 +360,7 @@
                           <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="buy.html">КУПИТЬ</a>
+                        <a class="buy open__popup-buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
@@ -381,7 +381,7 @@
                           <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="buy.html">КУПИТЬ</a>
+                        <a class="buy open__popup-buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
@@ -402,7 +402,7 @@
                           <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="buy.html">КУПИТЬ</a>
+                        <a class="buy open__popup-buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
@@ -423,7 +423,7 @@
                           <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="buy.html">КУПИТЬ</a>
+                        <a class="buy open__popup-buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
@@ -444,7 +444,7 @@
                           <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="buy.html">КУПИТЬ</a>
+                        <a class="buy open__popup-buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
@@ -465,7 +465,7 @@
                           <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                       </div>
                       <div class="catalog__btns">
-                        <a class="buy" href="buy.html">КУПИТЬ</a>
+                        <a class="buy open__popup-buy" href="buy.html">КУПИТЬ</a>
                         <a class="bookmark" href="#">В закладки</a>
                       </div>
                       <div class="item__img">
@@ -586,5 +586,32 @@
          </div>
       </div>
     </footer>
+
+    <script>
+        var buyLink = document.querySelector(".open__popup-buy");
+        var buyPopup = document.querySelector(".popup-buy");
+        var buyClose = buyPopup.querySelector(".popup__close");
+
+        buyLink.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            buyPopup.classList.add("popup__show");
+        });
+
+        buyClose.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            buyPopup.classList.remove("popup__show");
+        });
+
+        window.addEventListener("keydown", function (evt) {
+            if (evt.keyCode === 27) {
+                if (mapPopup.classList.contains("popup__show")) {
+                    evt.preventDefault();
+                    mapPopup.classList.remove("popup__show");
+                }
+            }
+        });
+
+    </script>
+
   </body>
 </html>
