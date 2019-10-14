@@ -1,11 +1,10 @@
-                    /*POPUP EMAIL*/
+//скрипт попапа "напишите нам"
 
 var link = document.querySelector(".contacts__btn");
 
 var popup = document.querySelector(".popup-email");
 var close = popup.querySelector(".popup__close");
 
-var form = popup.querySelector("form");
 var name = popup.querySelector("[name=user-name]");
 var email = popup.querySelector("[name=user-email]");
 var text = popup.querySelector("[name=user-text]");
@@ -37,18 +36,6 @@ close.addEventListener("click", function (evt) {
     popup.classList.remove("popup__error");
 });
 
-form.addEventListener("submit", function (evt) {
-    if (!name.value || !email.value|| !text.value) {
-        evt.preventDefault();
-        popup.classList.add("popup__error");
-        popup.offsetWidth = popup.offsetWidth;
-        popup.classList.add("popup__error");
-    } else {
-          if (isStorageSupport) {
-            localStorage.setItem("name", name.value);
-        }
-       }
-});
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
@@ -60,7 +47,7 @@ window.addEventListener("keydown", function (evt) {
     }
 });
 
-                    /*POPUP MAP*/
+//скрипт попапа-карты
 
 var mapLink = document.querySelector(".open-map");
 var mapPopup = document.querySelector(".popup-map");
@@ -85,27 +72,3 @@ window.addEventListener("keydown", function (evt) {
     }
 });
 
-                    /*POPUP BUY*/
-
-var buyLink = document.querySelectorAll(".open__popup-buy");
-var buyPopup = document.querySelector(".popup-buy");
-var buyClose = buyPopup.querySelector(".popup__close");
-
-buyLink.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    buyPopup.classList.add("popup__show");
-});
-
-buyClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    buyPopup.classList.remove("popup__show");
-});
-
-window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-        if (mapPopup.classList.contains("popup__show")) {
-            evt.preventDefault();
-            mapPopup.classList.remove("popup__show");
-        }
-    }
-});

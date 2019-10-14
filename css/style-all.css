@@ -1,8 +1,56 @@
+@font-face {
+    font-family: 'Cuprum';
+    src: url ('fonts/web/cuprum.woff')format ('woff'),
+         url ('fonts/web/cuprum.woff2') format ('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    src: url ('fonts/web/cuprum.woff')format ('woff'),
+         url ('fonts/web/cuprum.woff2') format ('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    src: url ('fonts/web/cuprum.woff')format ('woff'),
+         url ('fonts/web/cuprum.woff2') format ('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    src: url ('fonts/web/cuprum.woff')format ('woff'),
+         url ('fonts/web/cuprum.woff2') format ('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url ('fonts/web/ptsans.woff')format ('woff'),
+         url ('fonts/web/ptsans.woff2') format ('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url ('fonts/web/ptsansbold.woff')format ('woff'),
+         url ('fonts/web/ptsansbold.woff2') format ('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 .body {
     padding: 0;
     margin: 0;
 
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -10,6 +58,8 @@
 
     background-color: #ffffff;
 }
+
+
 
                               /* VISUALLY-HIDDEN (то, что скрыто)*/
 .visually-hidden {
@@ -24,67 +74,6 @@
     margin-left: auto;
     margin-right: auto;
 }
-
-                              /* SECTION-HEAD (заголовки разделов)*/
-.section__head {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    max-width: 940px;
-    min-height: 89px;
-
-    background-color: #f9f5f0;
-
-    margin-top: 21px;
-    margin-bottom: 20px;
-}
-
-.section__head-title {
-    max-width: 620px;
-
-    font-family: 'Cuprum', sans-serif;
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #32425c;
-
-    margin-left: 30px;
-}
-
-.section__head-btn {
-    display: block;
-
-    width: 253px;
-    height: 18px;
-
-    font-family: 'Cuprum', sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: #ffffff;
-
-    background-color: #ee3643;
-    border-radius: 3px;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-right: 24px;
-}
-
-.section__head-btn:hover,
-.section__head-btn:focus {
-    background-color: #ca2c37;
-}
-
-.section__head-btn:active {
-    background-color: #ba2732;
-}
-
 
                               /* HEADER */
 .header {
@@ -251,7 +240,7 @@
     width: 105px;
     height: 22px;
 
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
@@ -283,7 +272,7 @@
     width: 105px;
     height: 22px;
 
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
@@ -323,7 +312,7 @@
     width: 150px;
     height: 22px;
 
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
@@ -366,7 +355,7 @@
 }
 
 .header__txt {
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
@@ -407,7 +396,7 @@
 }
 
 .header__tel {
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 21px;
     line-height: 21px;
     text-decoration: none;
@@ -423,7 +412,7 @@
 .header__geo {
     max-width: 264px;
 
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 24px;
     text-align: center;
@@ -469,7 +458,7 @@
 }
 
 .user-navigation a {
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 21px;
     line-height: 21px;
     color: #000000;
@@ -571,7 +560,7 @@
 .profile-link {
     display: block;
 
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 21px;
     line-height: 21px;
     font-weight: 400;
@@ -626,7 +615,7 @@
 .account-bottom-line a {
     position: relative;
 
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
@@ -693,7 +682,7 @@
     height: 17px;
 
 
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 17px;
     line-height: 17px;
     color: #ffffff;
@@ -717,7 +706,7 @@
     background-color: #293449;
 }
 
-             /* ==================== INDEX ==================== */
+            /* ==================== INDEX ==================== */
 
                               /* MENU */
 .container__menu {
@@ -767,7 +756,8 @@
 }
 
 .menu__title {
-    font-family: 'Cuprum', sans-serif;
+
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -875,7 +865,7 @@
 }
 
 .slide__title {
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
@@ -888,7 +878,7 @@
 }
 
 .slide__subtitle {
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -1045,7 +1035,7 @@
     width: 195px;
     height: 18px;
 
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -1071,6 +1061,66 @@
 }
 
                               /* POPULAR ITEMS */
+
+.section__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 940px;
+    min-height: 89px;
+
+    background-color: #f9f5f0;
+
+    margin-top: 21px;
+    margin-bottom: 20px;
+}
+
+.section__head-title {
+    max-width: 620px;
+
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #32425c;
+
+    margin-left: 30px;
+}
+
+.section__head-btn {
+    display: block;
+
+    width: 253px;
+    height: 18px;
+
+    font-family: 'Cuprum', 'Arial', sans-serif;;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+
+    background-color: #ee3643;
+    border-radius: 3px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 24px;
+}
+
+.section__head-btn:hover,
+.section__head-btn:focus {
+    background-color: #ca2c37;
+}
+
+.section__head-btn:active {
+    background-color: #ba2732;
+}
+
 .popular-items__list {
     display: flex;
     flex-direction: row;
@@ -1133,7 +1183,7 @@
     display: block;
     text-align: center;
 
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -1208,7 +1258,8 @@
 }
 
 .popular-items__title {
-    font: 'PT Sans', sans-serif;
+
+    font: 'PT Sans', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
@@ -1219,7 +1270,7 @@
 }
 
 .popular-items__discount {
-    font: 'PT Sans', sans-serif;
+    font: 'PT Sans', 'Arial', sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 700;
@@ -1236,7 +1287,7 @@
 .popular-items__price {
     position: relative;
 
-    font: 'PT Sans', sans-serif;
+    font: 'PT Sans', 'Arial', sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 700;
@@ -1336,7 +1387,7 @@
 }
 
 .services__title {
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -1348,7 +1399,7 @@
 }
 
 .services__txt {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -1390,7 +1441,7 @@
     width: 220px;
     height: 30px;
 
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 21px;
     line-height: 30px;
     font-weight: 700;
@@ -1456,7 +1507,7 @@
 }
 
 .item-description__title {
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
@@ -1469,7 +1520,7 @@
 .item-description__txt {
     width: 380px;
 
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -1496,7 +1547,7 @@
     width: 195px;
     height: 18px;
 
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-decoration: none;
@@ -1557,7 +1608,7 @@
 
 
 .info__title {
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
@@ -1565,7 +1616,7 @@
 }
 
 .info__txt {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -1583,7 +1634,7 @@
 }
 
 .info__transport-companies a {
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
@@ -1601,7 +1652,7 @@
     width: 220px;
     height: 18px;
 
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-decoration: none;
@@ -1631,7 +1682,7 @@
 }
 
 .contacts__title {
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
@@ -1639,7 +1690,7 @@
 }
 
 .contacts__txt {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -1655,7 +1706,7 @@
     width: 300px;
     height: 18px;
 
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-decoration: none;
@@ -1680,7 +1731,817 @@
     background-color: #ba2732;
 }
 
-                              /* POPUP'S */
+
+             /* ==================== CATALOG ==================== */
+
+ /* MAIN */
+.container {
+    position: relative;
+}
+
+
+.breadcrumbs {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumbs li,
+.breadcrumbs a {
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+.breadcrumbs li {
+    position: relative;
+
+    margin-right: 42px;
+}
+
+.breadcrumbs li::after {
+    position: absolute;
+
+    top: 5px;
+    right: -25px;
+
+    content: "";
+
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-right: 1px solid #c5c9d1;
+    border-bottom: 1px solid #c5c9d1;
+
+    transform: rotate(-45deg);
+}
+
+.breadcrumbs__current::after {
+    display: none;
+}
+
+.container__title {
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #32425c;
+
+    height: 30px;
+
+    background-color: #f2f6f8;
+
+    margin-top: 25px;
+    margin-bottom: 20px;
+
+    padding-top: 30px;
+    padding-bottom: 29px;
+    padding-left: 30px;
+
+}
+
+                              /* FILTERS */
+
+                              /* PRICE */
+
+.filters {
+    float: left;
+
+    width: 220px;
+
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+
+    margin-right: 20px;
+}
+
+.filters__title {
+    height: 18px;
+
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #f7f3ec;
+
+    margin: 0;
+    margin-bottom: 20px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    word-break: break-all;
+}
+
+.filter__price {
+    height: 187px;
+
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.filter__price legend {
+    font-weight: 700;
+
+    word-break: break-all;
+
+    margin-bottom: 23px;
+}
+
+.range-controls {
+    position: relative;
+
+    height: 50px;
+
+    background-color: #f7f3ec;
+
+    padding-top: 30px;
+    padding-left: 40px;
+
+    margin-bottom: 9px;
+}
+
+.range-controls .scale {
+    height: 2px;
+
+    background-color: #d7dcde;
+}
+
+.range-controls .bar {
+      width: 80%;
+      height: 2px;
+
+      background: #00ca74;
+}
+
+.range-toggle {
+      position: absolute;
+      top: 21px;
+
+      width: 4px;
+      height: 4px;
+
+      background: #ababab;
+      border: 8px solid #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+      cursor: pointer;
+}
+
+.range-toggle-min {
+      left: 20px;
+}
+
+.range-toggle-max {
+      left: 80%;
+}
+
+.range-toggle:hover {
+      background: #1c4f80;
+}
+
+.price__area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price__min input,
+.price__max input {
+    max-width: 95px;
+    min-height: 38px;
+
+    font-size: 17px;
+    text-align: center;
+
+    background-color: #f7f3ec;
+    border: none;
+}
+
+.price__area span {
+    font-size: 16px;
+
+    margin-top: 10px;
+}
+
+                              /* FABRICATORS */
+
+.filter__fabricators {
+    max-width: 220px;
+
+    padding:0;
+    margin: 0;
+
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.filter__fabricators legend {
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+    word-break: break-all;
+}
+
+.fabricators {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fabricators__item {
+    margin-left: 35px;
+    margin-bottom: 25px;
+}
+
+.fabricators__item label {
+    position: relative;
+
+    cursor: pointer;
+
+    word-break: break-all;
+}
+
+.fabricators__checkbox {
+    display: none;
+}
+
+.fabricators__checkbox + label::before {
+    content: "";
+
+    position: absolute;
+
+    top: -3px;
+    left: -35px;
+
+    width: 21px;
+    height: 21px;
+
+    border: 2px solid #c5c5c5;
+    border-radius: 3px;
+}
+
+.fabricators__checkbox:checked + label::after {
+    content: "";
+
+    position: absolute;
+
+    top: -3px;
+    left: -30px;
+
+    width: 20px;
+    height: 10px;
+
+    transform: rotate(-45deg);
+
+    border-left: 4px solid #c5c5c5;
+    border-bottom: 4px solid #c5c5c5;
+}
+
+.fabricators__checkbox:hover + label::before {
+    border-color: #b5b5b5;
+}
+
+                              /* POWER */
+
+.filter__power {
+    max-width: 220px;
+
+    border: none;
+
+    padding:0;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.filter__power legend {
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+    word-break: break-all;
+}
+
+.power {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.power__item {
+    margin-left: 35px;
+    margin-bottom: 25px;
+}
+
+.power__item label {
+    position: relative;
+
+    max-width: 220px;
+    min-height: 30px;
+
+    cursor: pointer;
+
+    word-break: break-all;
+}
+
+.power__radio {
+    display: none;
+}
+
+.power__radio + label::before {
+    content: "";
+
+    position: absolute;
+    top: -3px;
+    left: -35px;
+
+    width: 17px;
+    height: 17px;
+
+    border: 4px solid #c5c5c5;
+    border-radius: 50%;
+}
+
+.power__radio:checked + label::after {
+    content: "";
+
+    position: absolute;
+    top: 5px;
+    left: -27px;
+
+    width: 9px;
+    height: 9px;
+
+    background-color: #c5c5c5;
+    border-radius: 50%;
+}
+
+.power__radio:hover + label::before {
+    border-color: #b5b5b5;
+}
+
+.power__radio:hover + label::after {
+    background-color: #b5b5b5;
+}
+
+.filters__btn {
+    display: block;
+    width: 138px;
+    height: 36px;
+
+    cursor: pointer;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+}
+
+.filters__btn:hover,
+.filters__btn:focus {
+    border-color: #bdc6ca;
+}
+
+.filters__btn:active {
+    border-color: #ee3643;
+}
+
+                              /* SORTS */
+.sorts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    max-width: 700px;
+    min-height: 18px;
+
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #f7f3ec;
+
+    margin-bottom: 20px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sorts__title {
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+
+    margin: 0;
+    margin-left: 19px;
+    margin-right: 137px;
+}
+
+.sort {
+    max-width: 460px;
+}
+
+.sort__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sort__item {
+    position: relative;
+    margin-right: 50px;
+}
+
+.sort__item:nth-child(4) {
+    margin-right: 20px;
+}
+
+.sort__item:nth-child(4n) {
+    margin-right: 17px;
+}
+
+.sort__item label {
+    cursor: pointer;
+    color: #c5c5c5;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #ee3643;
+}
+
+.sort__item label:hover {
+    color: #231f20;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #ee3643;
+}
+
+.sort__radio {
+    display: none;
+}
+
+.sort__radio:checked ~ label{
+    color: #ee3643;
+    text-decoration: none;
+}
+
+.sort__item svg {
+    width: 11px;
+    height: 10px;
+
+    fill: #c5c5c5;
+}
+
+.sort-min-arrow:hover > svg,
+.sort-max-arrow:hover > svg {
+    fill: #231f20;
+}
+
+
+.sort__radio:checked + label > svg {
+    fill: #ee3643;
+}
+
+                              /* CATALOG */
+
+.catalog {
+    margin-bottom: 52px;
+}
+
+.catalog__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 700px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.catalog__item {
+    position: relative;
+
+    max-width: 218px;
+    min-height: 316px;
+    border: 1px solid #eaeaea;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.catalog__item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.catalog__item:hover {
+    box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.catalog__item:hover .catalog__btns {
+    display: block;
+}
+
+.flag {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+
+    width: 60px;
+    height: 59px;
+
+    overflow: hidden;
+    z-index: 20;
+}
+
+.catalog__btns {
+    display: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 218px;
+    height: 170px;
+    background-color: #ffffff;
+}
+
+.buy,
+.bookmark {
+    display: block;
+    text-align: center;
+
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buy {
+    color: #eef4ec;
+
+    width: 135px;
+    height: 18px;
+
+    background-color: #63a63e;
+    border-bottom: 3px solid #367315;
+    border-radius: 3px;
+
+    margin-top: 45px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+}
+
+.buy:hover,
+.buy:focus {
+    background-color: #5fbb2d;
+}
+
+.buy:active {
+    background-color: #518534;
+    border-bottom-color: #518534;
+}
+
+.bookmark {
+    color: #32425c;
+
+    width: 129px;
+    height: 18px;
+
+    background-color: #ffffff;
+    border: 3px solid #63a63e;
+    border-radius: 3px;
+
+    margin-top: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.bookmark:hover,
+.bookmark:focus {
+    border-color: #32425c;
+}
+
+.bookmark:active {
+    color: #d0d2d6;
+    border-color: #c1c6ce;
+}
+
+.item__img {
+    width: 218px;
+    height: 170px;
+}
+
+.item__img img {
+    max-width: 100%;
+}
+
+
+.catalog__item a {
+    text-decoration: none;
+}
+
+.item__title {
+    font: 'PT Sans', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+
+    margin: 0;
+}
+
+.item__discount {
+    font: 'PT Sans', 'Arial', sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: line-through;
+    color: #a9a9a9;
+
+    min-height: 18px;
+
+    margin-top: 18px;
+    margin-bottom: 13px;
+}
+
+.item__price {
+    position: relative;
+
+    font: 'PT Sans', 'Arial', sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    text-align: center;;
+    color: #ffffff;
+
+    width: 80px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+
+    background-color: #ee3643;
+    border-radius: 3px;
+}
+
+.item__price::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: -20px;
+
+    width: 0;
+    height: 0;
+
+    border: 20px solid white;
+    border-left-color: #ee3643;
+}
+
+                              /* PAGINATION */
+.pagination {
+    margin-left: 240px;
+    margin-bottom: 60px;
+}
+
+.pagination__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination__item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+.pagination__item a {
+    display: block;
+
+    width: 36px;
+    height: 18px;
+
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.next-page a{
+    width: 138px;
+}
+
+.pagination__item a:hover,
+.pagination__item a:focus {
+    border-color: #bdc6ca;
+}
+
+.pagination__item a:active {
+    border-color: #ee3643;
+}
+
+.pagination__item-current a {
+    width: 37px;
+    height: 19px;
+
+    background-color: #ee3643;
+    border: none;
+    border-radius: 3px;
+}
+
+.pagination__item-current a {
+    color: #fef5f6;
+}
+
+                              /* ABOUT CONTAINER */
+.about-container {
+    width: 100%;
+    background-color: #f2f6f8;
+}
+
+.about-container__title {
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+
+    margin: 0;
+    padding-top: 68px;
+    padding-bottom: 39px;
+}
+
+.about-container__txt {
+    font: 'PT Sans', 'Arial', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+
+    margin: 0;
+    padding-bottom: 75px;
+}
+
+             /* ==================== POPUP'S  ==================== */
 @keyframes bounce {
       0% {
         transform: translateY(-2000px);
@@ -1721,6 +2582,8 @@
      }
 }
 
+                              /* POPUP SHOW */
+
 .popup__show {
     display: block;
 
@@ -1730,6 +2593,8 @@
 .popup__error {
     animation: shake 0.6s;
 }
+
+                              /* POPUP EMAIL */
 
 .popup-email {
     position: fixed;
@@ -1766,7 +2631,7 @@
 }
 
 .popup-email__form label {
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
@@ -1785,7 +2650,7 @@ popup-email__text label {
 
 .popup-email__form input,
 .popup-email__form textarea {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -1801,7 +2666,7 @@ popup-email__text label {
 }
 
 .popup-email__form textarea {
-    max-width: 456px;
+    width: 456px;
     min-height: 110px;
 
     border: 2px solid #d7dcde;
@@ -1832,7 +2697,7 @@ popup-email__text label {
     width: 460px;
     height: 38px;
 
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -1854,6 +2719,8 @@ popup-email__text label {
 .popup-email__button:focus {
     background-color: #ba2732;
 }
+
+                              /* POPUP CLOSE */
 
 .popup__close {
     position: absolute;
@@ -1893,6 +2760,8 @@ popup-email__text label {
     transform: rotate(-45deg);
 }
 
+                              /* POPUP MAP */
+
 .popup-map {
     position: fixed;
     z-index: 2000;
@@ -1923,6 +2792,86 @@ popup-email__text label {
     border: none;
 }
 
+                              /* POPUP BUY */
+
+.popup-buy {
+    position: fixed;
+    z-index: 2000;
+    top: 40%;
+    left: 36%;
+
+    width: 620px;
+    height: 275px;
+
+    background-color: #ffffff;
+
+    border-top: 7px solid #ee3643;
+
+    box-shadow:  0px 20px 40px 0px rgba(41, 52, 73, 0.75);
+}
+
+.popup-buy p {
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+
+    color: #000000;
+
+    margin: 0;
+    margin-top: 65px;
+
+}
+
+.popup-buy img {
+    float: left;
+
+    margin-top: 48px;
+    margin-left: 80px;
+    margin-right: 30px;
+
+}
+
+.popup-buy__buttons {
+    text-align: center;
+
+    background-color: #f1f1f1;
+
+    margin-top: 70px;
+    padding-top: 37px;
+    padding-bottom: 37px;
+}
+
+.popup-buy__buttons button {
+    width: 220px;
+    height: 38px;
+
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #ffffff;
+
+    border: none;
+    border-radius: 3px;
+
+    cursor: pointer;
+}
+
+.popup-buy__buttons button:first-child {
+    margin-right: 20px;
+}
+
+.popup-buy__buttons button:hover,
+.popup-buy__buttons button:focus {
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+.popup-buy__buttons button:active {
+    background-color: #ba2732;
+}
 
                               /* FOOTER */
 .footer {
@@ -1936,10 +2885,11 @@ popup-email__text label {
 .footer__top-line {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+
 
     width: 940px;
-    height: 63px;
+    min-height: 63px;
 
     margin-left: auto;
     margin-right: auto;
@@ -1951,6 +2901,8 @@ popup-email__text label {
 
     background-color: #ee3643;
     border-bottom: 5px solid #b52933;
+
+    margin-right: 170px;
 }
 
 .footer__logo img {
@@ -1966,6 +2918,7 @@ popup-email__text label {
 .footer__navigation {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     width: 547px;
@@ -1976,8 +2929,12 @@ popup-email__text label {
     margin-top: 31px;
 }
 
+.footer__navigation li {
+    margin-right: 10px;
+}
+
 .footer__navigation a {
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: #f1f5f7;
@@ -1999,6 +2956,7 @@ popup-email__text label {
 .footer__mid-line {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     width: 940px;
@@ -2009,7 +2967,9 @@ popup-email__text label {
 }
 
 .footer__contacts {
-    font-family: 'Cuprum', sans-serif;
+    max-width: 330px;
+
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: #f1f5f7;
@@ -2020,6 +2980,7 @@ popup-email__text label {
 .items-navigation {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     width: 524px;
@@ -2030,8 +2991,12 @@ popup-email__text label {
     margin-top: 35px;
 }
 
+.items-navigation  li {
+    margin-right: 10px;
+}
+
 .items-navigation a {
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: #ffd180;
@@ -2052,7 +3017,7 @@ popup-email__text label {
 
 .footer__bottom-wrap {
     width: 100%;
-    height: 107px;
+    min-height: 107px;
 
     background-color: #293449;
 }
@@ -2060,17 +3025,20 @@ popup-email__text label {
 .footer__bottom-line {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     width: 940px;
-    height: 107px;
+    min-height: 107px;
 
     margin-left: auto;
     margin-right: auto;
 }
 
 .footer__copyright {
-    font-family: 'Cuprum', sans-serif;
+    max-width: 230px;
+
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
@@ -2081,6 +3049,7 @@ popup-email__text label {
 .footer__socials {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 130px;
 
@@ -2101,6 +3070,8 @@ popup-email__text label {
 
     background-color: #212a3a;
     border-radius: 20px;
+
+    margin-bottom: 10px;
 }
 
 .social__item:hover,
@@ -2113,16 +3084,15 @@ popup-email__text label {
     display: block;
 }
 
-
-
 .footer__feedback {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     width: 300px;
 
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
@@ -2131,6 +3101,10 @@ popup-email__text label {
     padding: 0;
     margin: 0;
     margin-top: 40px;
+}
+
+.footer__feedback li {
+    margin-bottom: 10px;
 }
 
 .footer__feedback a {

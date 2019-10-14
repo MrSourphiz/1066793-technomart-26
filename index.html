@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-all-min.css" rel="stylesheet">
   </head>
   <body>
    <!-- ICON'S (У КОТОРЫХ МЕНЯЕТСЯ ЦВЕТ) -->
@@ -31,13 +31,13 @@
        </symbol>
 
        <symbol id="phone-icon" viewBox="0 0 19 19">
-               <g>
+           <g>
                    <path d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z"/>
              </g>
        </symbol>
 
        <symbol id="login-icon" viewBox="0 0 20 17">
-               <g>
+           <g>
                    <path d="M14.875 8.5L6 0v6H0v5h6v6z"/>
                    <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
                </g>
@@ -57,13 +57,13 @@
        </symbol>
 
        <symbol id="up-dir" viewBox="0 0 11 10">
-               <g>
+           <g>
                    <path d="M5.5 0L0 10h11z"/>
                </g>
        </symbol>
 
        <symbol id="down-dir" viewBox="0 0 11 10">
-               <g>
+           <g>
                    <path d="M5.5 10L0 0h11"/>
            </g>
        </symbol>
@@ -285,7 +285,7 @@
                       <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                   </div>
                   <div class="popular-items__btns">
-                    <a class="buy" href="buy.html">КУПИТЬ</a>
+                    <a class="buy open__popup-buy" href="buy.html">КУПИТЬ</a>
                     <a class="bookmark" href="#">В закладки</a>
                   </div>
                   <div class="popular-items__img">
@@ -306,7 +306,7 @@
                       <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                   </div>
                   <div class="popular-items__btns">
-                    <a class="buy" href="buy.html">КУПИТЬ</a>
+                    <a class="buy open__popup-buy" href="buy.html">КУПИТЬ</a>
                     <a class="bookmark" href="#">В закладки</a>
                   </div>
                   <div class="popular-items__img">
@@ -327,7 +327,7 @@
                       <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                   </div>
                   <div class="popular-items__btns">
-                    <a class="buy" href="buy.html">КУПИТЬ</a>
+                    <a class="buy open__popup-buy" href="buy.html">КУПИТЬ</a>
                     <a class="bookmark" href="#">В закладки</a>
                   </div>
                   <div class="popular-items__img">
@@ -348,7 +348,7 @@
                       <img src="img/new-flag.png" width="60" height="59" alt="Маркировка нового товара">
                   </div>
                   <div class="popular-items__btns">
-                    <a class="buy" href="buy.html">КУПИТЬ</a>
+                    <a class="buy open__popup-buy" href="buy.html">КУПИТЬ</a>
                     <a class="bookmark" href="#">В закладки</a>
                   </div>
                   <div class="popular-items__img">
@@ -426,7 +426,7 @@
               </p>
               <div class="services__wrap">
 
-                  <input class="delivery__radio visually-hidden" type="radio" id="delivery" name="services-group">
+                  <input class="delivery__radio visually-hidden" type="radio" id="delivery" name="services-group" checked>
                   <input class="guarantee__radio visually-hidden" type="radio" id="guarantee" name="services-group">
                   <input class="credit__radio visually-hidden" type="radio" id="credit" name="services-group">
 
@@ -536,18 +536,18 @@
 
       <section class="popup-email visually-hidden">
           <h2 class="visually-hidden">Отправить e-mail</h2>
-          <form class="popup-email__form" id="email-form" action="mailto:mail@technomart.ru" method="post">
+          <form class="popup-email__form" id="email-form" action="https://echo.htmlacademy.ru" method="post">
              <p class="popup-email__name">
               <label for="user-name">Ваше имя:</label>
-              <input type="text" id="user-name" name="user-name" value="" placeholder="Имя Фамилия" required>
+              <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия" required>
              </p>
              <p class="popup-email__name">
               <label for="user-email">Ваш e-mail:</label>
-              <input type="email" id="user-email" name="user-email" value="" placeholder="email@example.com" required>
+              <input type="email" id="user-email" name="user-email" placeholder="email@example.com" required>
              </p>
              <p class="popup-email__text">
               <label for="user-text">Текст письма:</label>
-              <textarea id="user-text" name="user-text" rows="10" cols="45" value="" placeholder="В свободной форме" required></textarea>
+              <textarea id="user-text" name="user-text" rows="10" cols="45" placeholder="В свободной форме" required></textarea>
              </p>
           </form>
 
@@ -555,6 +555,19 @@
               <button class="popup-email__button" form="email-form" type="submit">Отправить</button>
           </div>
 
+          <button class="popup__close" type="button">
+              <span class="visually-hidden">Закрыть</span>
+          </button>
+      </section>
+
+      <section class="popup-buy visually-hidden">
+          <h2 class="visually-hidden">Добавление товара в корзину</h2>
+          <img src="img/popup-done.png" alt="Товар добавлен в корзину!">
+          <p>Товар добавлен в корзину!</p>
+          <div class="popup-buy__buttons">
+              <button class="btn" type="button">Оформить заказ</button>
+              <button class="buy-continue" type="button">Продолжить покупки</button>
+          </div>
           <button class="popup__close" type="button">
               <span class="visually-hidden">Закрыть</span>
           </button>
@@ -628,6 +641,7 @@
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/index-script-min.js"></script>
+    <script src="js/catalog-script-min.js"></script>
   </body>
 </html>
