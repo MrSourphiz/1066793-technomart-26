@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Cuprum";
+    src: url("cuprum-regular.eot");
+    src: url("/fonts/cuprum/cuprum-regular.eot?#iefix") format("embedded-opentype"),
+         url("/fonts/cuprum/cuprum-regular.woff") format("woff"),
+         url("/fonts/cuprum/cuprum-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: url("cuprum-italic.eot");
+    src: url("/fonts/cuprum/cuprum-italic.eot?#iefix") format("embedded-opentype"),
+         url("/fonts/cuprum/cuprum-italic.woff") format("woff"),
+         url("/fonts/cuprum/cuprum-italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: url("cuprum-bold.eot");
+    src: url("/fonts/cuprum/cuprum-bold.eot?#iefix") format("embedded-opentype"),
+         url("/fonts/cuprum/cuprum-bold.woff") format("woff"),
+         url("/fonts/cuprum/cuprum-bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url("/fonts/ptsans/ptsans-narrow.eot");
+    src: url("/fonts/ptsans/ptsans-narrow.eot?#iefix") format("embedded-opentype"),
+         url("/fonts/ptsans/ptsans-narrow.woff") format("woff"),
+         url("/fonts/ptsans/ptsans-narrow.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url("/fonts/ptsans/ptsans-narrowbold.eot");
+    src: url("/fonts/ptsans/ptsans-narrowbold.eot?#iefix") format("embedded-opentype"),
+         url("/fonts/ptsans/ptsans-narrowbold.woff") format("woff"),
+         url("/fonts/ptsans/ptsans-narrowbold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
