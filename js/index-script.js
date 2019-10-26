@@ -53,12 +53,7 @@ form.addEventListener("submit", function (evt) {
         popup.classList.remove("popup__error");
         popup.offsetWidth = popup.offsetWidth;
         popup.classList.add("popup__error");
-     } else {
-         if (isStorageSupport) {
-             localStorage.setItem("name", name.value);
-             localStorage.setItem("email", email.value);
-         }
-       }
+     }
 });
 
 window.addEventListener("keydown", function (evt) {

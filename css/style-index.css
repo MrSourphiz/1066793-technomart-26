@@ -1,5 +1,5 @@
 .body {
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     color: #000000;
 
     background-color: #ffffff;
@@ -107,7 +107,7 @@
     width: 221px;
     height: 18px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 400;
@@ -200,7 +200,7 @@
     width: 105px;
     height: 18px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
@@ -231,7 +231,7 @@
     width: 105px;
     height: 18px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
@@ -271,7 +271,7 @@
     width: 150px;
     height: 18px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
@@ -313,7 +313,7 @@
     max-width: 197px;
     word-wrap: break-word;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
@@ -358,7 +358,7 @@
 .header__tel {
     height: 21px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 21px;
     line-height: 21px;
     text-decoration: none;
@@ -374,7 +374,7 @@
 .header__geo {
     max-width: 270px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
     text-align: center;
@@ -429,7 +429,7 @@
 }
 
 .user-navigation a {
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 21px;
     line-height: 21px;
     color: #000000;
@@ -530,7 +530,7 @@
 .profile-link {
     display: block;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 21px;
     line-height: 21px;
     font-weight: 400;
@@ -585,7 +585,7 @@
 .account-bottom-line a {
     position: relative;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
@@ -650,7 +650,7 @@
     display: block;
     height: 17px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 17px;
     line-height: 17px;
     color: #ffffff;
@@ -720,7 +720,7 @@
 }
 
 .menu__title {
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -759,7 +759,7 @@
     width: 135px;
     height: 18px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-decoration: none;
@@ -925,7 +925,7 @@
 }
 
 .slide__title {
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
@@ -938,7 +938,7 @@
 }
 
 .slide__subtitle {
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -1097,7 +1097,7 @@
     width: 145px;
     height: 18px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -1142,7 +1142,7 @@
 .popular-items__head-title {
     max-width: 620px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -1159,7 +1159,7 @@
     width: 253px;
     height: 18px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-decoration: none;
@@ -1247,7 +1247,7 @@
     display: block;
     text-align: center;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -1349,7 +1349,7 @@
 .popular-items__title {
     min-height: 40px;
 
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
@@ -1366,7 +1366,7 @@
 }
 
 .popular-items__discount {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 700;
@@ -1385,7 +1385,7 @@
 
     width: 80px;
 
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 700;
@@ -1436,7 +1436,7 @@
 .popular-fabricators__head-title {
     max-width: 620px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -1453,7 +1453,7 @@
     width: 253px;
     height: 18px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-decoration: none;
@@ -1570,7 +1570,7 @@
 }
 
 .services__title {
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -1585,7 +1585,7 @@
     max-width: 400px;
     word-wrap: break-word;
 
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -1641,7 +1641,7 @@
     width: 220px;
     height: 30px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 21px;
     line-height: 30px;
     font-weight: 700;
@@ -1701,7 +1701,7 @@
 }
 
 .item-description__title {
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
@@ -1725,7 +1725,7 @@
     width: 380px;
     word-wrap: break-word;
 
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -1791,7 +1791,7 @@
     width: 195px;
     height: 18px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-decoration: none;
@@ -1848,7 +1848,7 @@
 }
 
 .info__title {
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
@@ -1856,7 +1856,7 @@
 }
 
 .info__txt {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -1892,7 +1892,7 @@
 }
 
 .transport-companies__title {
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
@@ -1924,7 +1924,7 @@
     width: 220px;
     height: 18px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-decoration: none;
@@ -1954,7 +1954,7 @@
 }
 
 .contacts__title {
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
@@ -1966,7 +1966,7 @@
 
     word-wrap: break-word;
 
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -1984,7 +1984,7 @@
     width: 235px;
     height: 18px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-decoration: none;
@@ -2088,7 +2088,7 @@
 }
 
 .popup-email__form label {
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
@@ -2099,7 +2099,7 @@
 
 .popup-email__form input,
 .popup-email__form textarea {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -2171,7 +2171,7 @@
     width: 460px;
     height: 38px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -2274,7 +2274,7 @@
 }
 
 .popup-buy__text {
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -2316,7 +2316,7 @@
     width: 220px;
     height: 38px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -2400,7 +2400,7 @@
 }
 
 .footer__navigation a {
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: #f1f5f7;
@@ -2435,7 +2435,7 @@
     max-width: 330px;
     word-wrap: break-word;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: #f1f5f7;
@@ -2459,7 +2459,7 @@
 }
 
 .items-navigation a {
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: #ffd180;
@@ -2500,7 +2500,7 @@
     max-width: 230px;
 
     word-wrap: break-word;
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
@@ -2556,7 +2556,7 @@
 
     width: 300px;
 
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
