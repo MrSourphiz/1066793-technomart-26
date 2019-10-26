@@ -1,9 +1,11 @@
 .body {
-    padding: 0;
-    margin: 0;
     font-family: "Cuprum", Arial, sans-serif;
     color: #000000;
+
     background-color: #ffffff;
+
+    padding: 0;
+    margin: 0;
 }
 
                               /* VISUALLY-HIDDEN*/
@@ -14,6 +16,7 @@
                               /* CENTER-CONTAINER (центровщик) */
 .center-container {
     width: 940px;
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -22,13 +25,14 @@
 .header {
     width: 100%;
     min-height: 320px;
-    margin-bottom: 60px;
+
     background-color: #f4f7f9;
 }
 
                               /* HEADER TOP LINE */
 .header__top-wrap {
     width: 100%;
+
     background-color: #293449;
 }
 
@@ -52,6 +56,7 @@
 
     width: 220px;
     height: 42px;
+
     background-color: #ee3643;
     border-bottom: 5px solid #b52933;
 }
@@ -59,6 +64,7 @@
 .header__logo img {
     width: 109px;
     height: 19px;
+
     margin-top: 13px;
     margin-right: 56px;
     margin-bottom: 11px;
@@ -92,6 +98,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
+
     width: 270px;
     height: 42px;
 }
@@ -99,23 +106,27 @@
 .search__input {
     width: 221px;
     height: 18px;
+
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 400;
     color: #ffffff;
+
     background-color: #293449;
+    border: none;
+
     margin: 0;
     padding: 0;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 49px;
-    border: none;
 }
 
 .search__button {
     background: none;
     border: none;
+
     padding: 0;
 }
 
@@ -124,9 +135,11 @@
     top: 12px;
     left: 17px;
     z-index: 100;
+
     display: block;
     width: 17px;
     height: 17px;
+
     cursor: pointer;
     fill: #6a7180;
 }
@@ -334,7 +347,7 @@
 .phone-icon {
     position: absolute;
     top: 10px;
-    left: 13px;
+    left: 20px;
 
     width: 19px;
     height: 19px;
@@ -351,9 +364,9 @@
     text-decoration: none;
     color: #ee3643;
 
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 71px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-left: 77px;
 
     margin: 0;
 }
@@ -366,6 +379,10 @@
     line-height: 24px;
     text-align: center;
     color: #32425c;
+
+    padding-top: 1px;
+    padding-left: 13px;
+
     margin: 0;
 }
 
@@ -374,10 +391,14 @@
     flex-direction: row;
     flex-wrap: wrap;
 
+    width: 291px;
+
     list-style: none;
+
     padding: 0;
     margin: 0;
     margin-top: 46px;
+    margin-bottom: 2px;
 }
 
 .user-navigation__content {
@@ -393,6 +414,7 @@
     background-color: #ffffff;
 
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .login-icon {
@@ -418,6 +440,7 @@
 
 .login-link {
     display: block;
+
     min-width: 63px;
     min-height: 21px;
 
@@ -462,6 +485,8 @@
 }
 
 .account-navigation {
+    width: 300px;
+
     list-style: none;
     padding: 0;
     margin: 0;
@@ -480,7 +505,7 @@
 
     background-color: #ffffff;
 
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .profile-content {
@@ -494,7 +519,7 @@
 .user-icon {
     position: absolute;
     top: 13px;
-    left: 13px;
+    left: 11px;
 
     width: 20px;
     height: 18px;
@@ -518,7 +543,7 @@
     padding-top: 12px;
     padding-bottom: 12px;
 
-    padding-left: 47px;
+    padding-left: 43px;
 }
 
 .profile-link:active {
@@ -540,7 +565,8 @@
 
     fill: #c5c5c5;
 
-    margin-right: 10px;
+    margin-top: 2px;
+    margin-right: 6px;
 }
 
 .exit-link:hover .logout-icon,
@@ -553,7 +579,7 @@
 }
 
 .account-bottom-line {
-    margin-left: 17px;
+    margin-left: 18px;
 }
 
 .account-bottom-line a {
@@ -565,7 +591,7 @@
     font-weight: 400;
     color: #32425c;
 
-    margin-right: 32px;
+    margin-right: 30px;
 }
 
 .account-bottom-line a::before {
@@ -613,6 +639,7 @@
     border-bottom: 5px solid #293449;
 
     list-style: none;
+
     padding: 0;
     margin: 0;
     margin-left: auto;
@@ -658,6 +685,8 @@
                               /* MENU */
 .container__menu {
     width: 940px;
+
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1240,8 +1269,8 @@
     border-radius: 3px;
 
     margin-top: 45px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 9px;
+    padding-bottom: 5px;
 }
 
 .buy:hover,
@@ -1290,8 +1319,8 @@
     border-radius: 3px;
 
     margin-top: 7px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 9px;
+    padding-bottom: 5px;
 }
 
 .bookmark:hover,
@@ -1313,7 +1342,6 @@
     max-width: 100%;
 }
 
-
 .popular-items__item a {
     text-decoration: none;
 }
@@ -1332,6 +1360,7 @@
     padding-bottom: 0;
     padding-left: 25px;
     padding-right: 25px;
+
     margin: 0;
     margin-top: 8px;
 }
@@ -1395,7 +1424,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 
     max-width: 940px;
     min-height: 89px;
@@ -1661,8 +1689,6 @@
 }
 
 .item-description {
-    position: relative;
-
     display: none;
 
     max-width: 630px;
@@ -1691,6 +1717,11 @@
 }
 
 .item-description__txt {
+    position: relative;
+    z-index: 10;
+
+    display: block;
+
     width: 380px;
     word-wrap: break-word;
 
@@ -1707,14 +1738,15 @@
     content: "";
 
     position: absolute;
-    top: 22px;
-    left: 230px;
+    top: -35px;
+    left: 150px;
+    z-index: -1;
 
     display: block;
     width: 468px;
     height: 261px;
 
-    background-image:url(../img/delivery_logo.svg);
+    background-image: url(../img/delivery_logo.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1723,14 +1755,15 @@
     content: "";
 
     position: absolute;
-    top: 0;
-    left: 319px;
+    top: -56px;
+    left: 240px;
+    z-index: -1;
 
     display: block;
     width: 389px;
     height: 283px;
 
-    background-image:url(../img/guarantee_logo.svg);
+    background-image: url(../img/guarantee_logo.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1739,14 +1772,15 @@
     content: "";
 
     position: absolute;
-    top: -2px;
-    left: 245px;
+    top: -60px;
+    left: 165px;
+    z-index: -1;
 
     display: block;
     width: 465px;
     height: 285px;
 
-    background-image:url(../img/credit_logo.svg);
+    background-image: url(../img/credit_logo.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2043,14 +2077,9 @@
 
 .popup-email__form {
     width: 460px;
+
     margin-left: 80px;
     margin-right: 80px;
-}
-
-.popup-email__name {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
 }
 
 .popup-email__form input,
@@ -2064,15 +2093,8 @@
     line-height: 18px;
     font-weight: 400;
     color: #000000;
-    margin-bottom: 13px;
-}
 
-.popup-email__name label {
-    margin-top: 48px;
-}
-
-popup-email__text label {
-    margin-top: 20px;
+    margin-bottom: 8px;
 }
 
 .popup-email__form input,
@@ -2082,20 +2104,27 @@ popup-email__text label {
     line-height: 18px;
     font-weight: 400;
     color: #000000;
+
+    padding-left: 12px;
 }
 
 .popup-email__form input {
-    width: 216px;
-    height: 34px;
+    width: 202px;
+    height: 32px;
+
     border: 2px solid #d7dcde;
     border-radius: 3px;
 }
 
 .popup-email__form textarea {
-    width: 456px;
+    width: 442px;
     min-height: 110px;
+    resize: none;
+
     border: 2px solid #d7dcde;
     border-radius: 3px;
+
+    padding-left: 15px;
 }
 
 .popup-email__form input:hover,
@@ -2108,23 +2137,47 @@ popup-email__text label {
     border-color: #ee3643;
 }
 
+.popup-email__name {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.popup-email__name label {
+    margin-top: 47px;
+}
+
+.popup-email__name:first-child input {
+    margin-right: 20px;
+}
+
+.popup-email__text {
+    margin: 0;
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
 .popup-email__wrap {
     text-align: center;
+
     background-color: #f1f1f1;
+
     margin-top: 37px;
-    padding-top: 37px;
-    padding-bottom: 37px;
+    padding-top: 30px;
+    padding-bottom: 44px;
 }
 
 .popup-email__button {
     width: 460px;
     height: 38px;
+
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
     color: #ffffff;
     cursor: pointer;
+
     background-color: #ee3643;
     border: none;
     border-radius: 3px;
@@ -2142,10 +2195,12 @@ popup-email__text label {
 .popup__close {
     position: absolute;
     top: 7px;
-    right: 7px;
+    right: 8px;
     z-index: 3000;
-    width: 22px;
-    height: 22px;
+
+    width: 25px;
+    height: 25px;
+
     background-color: transparent;
     border: 0;
     cursor: pointer;
@@ -2154,11 +2209,14 @@ popup-email__text label {
 .popup__close::before,
 .popup__close::after {
     content: "";
+
     position: absolute;
     top: 10px;
     left: 2px;
-    width: 19px;
+
+    width: 23px;
     height: 3px;
+
     background-color: #ee3643;
 }
 
@@ -2301,8 +2359,10 @@ popup-email__text label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     width: 940px;
     height: 63px;
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -2310,6 +2370,7 @@ popup-email__text label {
 .footer__logo {
     width: 220px;
     height: 63px;
+
     background-color: #ee3643;
     border-bottom: 5px solid #b52933;
 }
@@ -2317,6 +2378,7 @@ popup-email__text label {
 .footer__logo img {
     width: 138px;
     height: 23px;
+
     padding-top: 20px;
     padding-right: 41px;
     padding-bottom: 20px;
@@ -2327,8 +2389,11 @@ popup-email__text label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+
     width: 547px;
     list-style: none;
+
     padding: 0;
     margin: 0;
     margin-top: 37px;
@@ -2357,7 +2422,10 @@ popup-email__text label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+
     width: 940px;
+
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 32px;
@@ -2366,10 +2434,12 @@ popup-email__text label {
 .footer__contacts {
     max-width: 330px;
     word-wrap: break-word;
+
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: #f1f5f7;
+
     margin-top: 32px;
     margin-left: 3px;
 }
@@ -2378,8 +2448,11 @@ popup-email__text label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+
     width: 524px;
     list-style: none;
+
     padding: 0;
     margin: 0;
     margin-top: 32px;
@@ -2404,7 +2477,6 @@ popup-email__text label {
 }
 
                               /* FOOTER BOTTOM LINE */
-
 .footer__bottom-wrap {
     width: 100%;
     height: 107px;
@@ -2415,19 +2487,24 @@ popup-email__text label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+
     width: 940px;
     height: 107px;
+
     margin-left: auto;
     margin-right: auto;
 }
 
 .footer__copyright {
     max-width: 230px;
+
     word-wrap: break-word;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
+
     margin-top: 37px;
     margin-left: 2px;
 }
@@ -2436,8 +2513,11 @@ popup-email__text label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+
     width: 130px;
     list-style: none;
+
     padding: 0;
     margin: 0;
     margin-top: 38px;
@@ -2448,9 +2528,12 @@ popup-email__text label {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
+
     width: 40px;
     height: 40px;
+
     background-color: #212a3a;
     border-radius: 50%;
 }
@@ -2469,12 +2552,16 @@ popup-email__text label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+
     width: 300px;
+
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
     list-style: none;
+
     padding: 0;
     margin: 0;
     margin-top: 37px;
