@@ -312,6 +312,7 @@
 .header__txt {
     max-width: 197px;
     word-wrap: break-word;
+    white-space: pre-line;
 
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: italic;

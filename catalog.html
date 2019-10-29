@@ -6,7 +6,7 @@
     <title>HTML Academy: Каталог магазина Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,400i,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style-catalog.css" rel="stylesheet">
+    <link href="css/style-all-min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -53,7 +53,10 @@
             </div>
         </div>
         <div class="header__mid-line">
-            <p class="header__txt"> Интернет-магазин строительных материалов<br> и инструментов для ремонта </p>
+            <p class="header__txt">Интернет-магазин
+                строительных материалов
+                и инструментов для ремонта
+            </p>
             <div class="header__contacts">
                 <div class="phone__content">
                     <svg class="phone-icon" viewBox="0 0 19 19">
@@ -188,28 +191,23 @@
                 <form class="sort" method="get" action="#">
                     <ul class="sort__list">
                         <li class="sort__item">
-                            <input class="sort__radio" type="radio" id="sort-price" value="price" name="sort-group" checked>
-                            <label for="sort-price">По цене</label>
+                            <a class="sort__link current-sort" href="#">По цене</a>
                         </li>
                         <li class="sort__item">
-                            <input class="sort__radio" type="radio" id="sort-type" value="type" name="sort-group">
-                            <label for="sort-type">По типу</label>
+                            <a class="sort__link" href="#">По типу</a>
                         </li>
                         <li class="sort__item">
-                            <input class="sort__radio" type="radio" id="sort-function" value="function" name="sort-group">
-                            <label for="sort-function">По функционалу</label>
+                            <a class="sort__link" href="#">По функционалу</a>
                         </li>
                         <li class="sort__item">
-                            <input class="sort__radio" type="radio" id="sort-min" value="min-price" name="price-group" checked>
-                            <label for="sort-min" class="sort-min-arrow" aria-label="По возрастанию">
+                            <a class="sort-min-arrow current-sort" href="#" aria-label="По возрастанию">
                                 <svg class="up-dir-icon" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z" /></svg>
-                            </label>
+                            </a>
                         </li>
                         <li class="sort__item">
-                            <input class="sort__radio" type="radio" id="sort-max" value="max-price" name="price-group">
-                            <label for="sort-max" class="sort-max-arrow" aria-label="По убыванию">
+                            <a class="sort-max-arrow" href="#" aria-label="По убыванию">
                                 <svg class="down-dir-icon" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11" /></svg>
-                            </label>
+                            </a>
                         </li>
                     </ul>
                 </form>

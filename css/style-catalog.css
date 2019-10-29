@@ -309,6 +309,7 @@
 .header__txt {
     max-width: 197px;
     word-wrap: break-word;
+    white-space: pre-line;
 
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: italic;
@@ -1243,7 +1244,7 @@
     margin-right: 22px;
 }
 
-.sort__item label {
+.sort__link {
     cursor: pointer;
     color: #c5c5c5;
     text-decoration: underline;
@@ -1251,31 +1252,17 @@
     text-decoration-color: #ee3643;
 }
 
-.sort__item label:hover {
+.sort__link:hover,
+.sort__link:focus {
     color: #231f20;
     text-decoration: underline;
     text-decoration-style: solid;
     text-decoration-color: #ee3643;
 }
 
-.sort__radio {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-
-    opacity: 0;
-}
-
-.sort__radio:checked + label {
+.sort__link:active {
     color: #ee3643;
-    border-bottom: none;
-}
-
-.sort__radio:focus + label {
-    outline-color: #4D90FE;
-    outline-offset: -2px;
-    outline-style: auto;
-    outline-width: 5px;
+    text-decoration: none;
 }
 
 .sort__item svg {
@@ -1286,19 +1273,24 @@
 }
 
 .sort-min-arrow:hover > svg,
-.sort-max-arrow:hover > svg {
+.sort-max-arrow:hover > svg,
+.sort-min-arrow:focus > svg,
+.sort-max-arrow:focus > svg {
     fill: #231f20;
 }
 
-.sort__radio:checked + label > svg {
+.sort-min-arrow:active > svg,
+.sort-max-arrow:active > svg {
     fill: #ee3643;
 }
 
-.sort__radio:focus + label > svg {
-    outline-color: #4D90FE;
-    outline-offset: -2px;
-    outline-style: auto;
-    outline-width: 5px;
+.current-sort {
+    color: #ee3643;
+    text-decoration: none;
+}
+
+.current-sort > svg {
+    fill: #ee3643;
 }
 
                               /* CATALOG */
