@@ -3,6 +3,8 @@
 * Студент: [Миша Забава](https://up.htmlacademy.ru/htmlcss/26/user/1066793).
 * Наставник: [Вадим Баранов] (https://htmlacademy.ru/profile/id1088607).
 
+Демо: https://mrsourphiz.github.io/1066793-technomart-26/
+
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
